@@ -1,0 +1,308 @@
+HTML: Hyper Text Markup Language
+
+this files we can directly run in browser.
+
+==> extention = .html or .htm
+
+--------------------------------------------------------
+
+Versions: 1,2,3,4 and latest is HTML5
+
+HTML is used to create Webpages
+
+combination of webpages called: website
+
+first page of website called: Home (Landing page) (index.html)
+
+------------------------------------------------------------------------
+How to create code with help of HTML?
+
+structure of HTML Code.
+
+!Doctype HTML
+
+(indicates the version)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Metadata data about the data-->
+        <title>First WebPage</title>
+    </head>
+    <body>
+        <!-- Main Content to be displayed-->
+    </body>
+</html>
+
+__________________________________________________________________________
+
+head: you should add metadata
+
+body: add content which you want to display as a main content.
+
+____________________________________________________________________________
+
+
+Headings: are basically used to add heading to your page.
+where we have h1 to h6 headings available.
+
+----------------------------------------------------------------------
+
+Paragraph tag
+--------------------
+
+helping us to include the paragraph in webpage.
+<p> enter your paragraph here </p>
+
+hr --> used to enter a horizontal line
+
+<hr> tag no need to close.
+
+br-> used to break rows
+
+<br> auto close tag so no need to close it.
+
+______________________________________________________________________________________
+
+img tag
+-------------
+
+<img> tag
+
+image tag has multiple attributes
+
+src: where we will add the image location
+
+alt: alternative text (if the image not loaded then it will show this alternative text)
+
+height: to give height to image
+
+width: to give width to an image.
+
+
+attribute and its value must be sperated using = symbol and value must be enclosed with double quote
+
+height="300"
+
+multiple attributes must be seperated by space..
+
+height="300" width="300" alt="text"
+
+-----------------------------------------------------------------------------------------------------
+Creating Links using anchor tag
+
+<a> Click Me </a>
+
+attributes: 
+
+href: hyperlink reference
+
+when you click on the link it will open this hyperlink reference content.
+
+target: what value you enter in target accoridng to that it will open that page in browser
+
+	by default this target value is _self: it will open href link at the same location.
+
+	_blank: it will open in another tab.
+
+	_top: it will open in the top window.
+
+	_parent: it will open in its parent window.
+
+----------------------------------------------------------------------------------------------------
+
+Formatting tags
+----------------------------
+
+to format the content we can use diffrent formatting tags 
+
+<b></b> -- format it to bold
+
+<i></i> -- italic
+
+<u></u> -- underline
+
+==============================================================================
+List is basically helping us to show the content is a form of List.
+
+we have 2 types list available.
+
+1. Ordered List (ol tag)
+
+	type values: 1(by default), A, a, I, i
+
+	also you can give start value: start=5 it will start counting from 5.
+
+2. unorderd list (ul tag):
+
+	type: disc(default value), square, circle
+
+
+_________________________________________________________________________________
+
+Nested List: list inside a list..
+
+=================================================================================
+
+Div tag which is basically called as a divison inside that i can add multiple tags like images, paragraph, headings, all other formatting tags and I can structure my code.
+
+we can create multiple divs and manage our code like header part, about part, footer part etc.
+
+Each div is coming in a new line because by default the div is having a display block.
+
+Span: to give some extra css to some content we can use span tag to seperate it from other code.
+
+span tags displays in a line means its showing in a same where as div is always using a new line.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
