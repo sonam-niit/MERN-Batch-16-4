@@ -78,6 +78,124 @@ step: create a folder named TestGit and add some files to that folder.
 	(this is basically push your code which is commited to your remote repository)
 	(for the very first time when you execute this command it will ask you for authentication select default authentication which is browsers authentication so it will pop up a git hub login in browser enter your correct emailid and password so once its authenticated, it will push all commited files from local repo to remote repository.
 
+Here if I make any changes to this folder
+
+>git add .
+>git commit -m "message"
+>git push -u origin main
+--------------------------------------------------------------------------------------
+
+If you work with the gitbash then just right click to any folder and open with git bash and you can execute same commands from git bash too.
+
+
+========================================================================================
+git pull command:
+
+--> used to receive the data from git hub. It fetches and merges changes on the remote server to your working directory.
+
+just go to your any repository in github.com and click on add readme file
+
+commit the changes.
+
+to get those changes to your locla system.
+
+execute below command to your folder location.
+
+>git pull
+
+(it will pull readme.md file to your local system)
+
+
+git log command: this will tell you the commit history.
+
+>git log
+you can pass number to see the latest commits.
+>git log -3 (it will show you the latest 3 commits)
+
+Git Branch
+-----------------
+show you all the branches available in the repository
+
+Git Merge
+---------------
+this is used to merge branches
+
+git merge main (merge the main)
+
+Git stash command
+----------------------------
+built in command with distributed version control system
+
+helping us to switch the branches.
+
+i have create a repo with 2 branch backend and frontend
+
+(half work done with backend and now i want to move to frontend branch) and i dont't want to commit.
+
+It that case if you want to switch branches you can use git stash command.
+
+
+It is basically providing a temp storage where we can keep our data safe without commiting.
+
+
+Git Checkout
+-------------------
+
+allows you to move from one branch to another branch.
+
+checking the branch updates when any commits happen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
