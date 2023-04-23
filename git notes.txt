@@ -1,0 +1,116 @@
+Git Working:
+--------------------
+
+Working copy:  my system code where I am working (my workspace, the folder where i am making changes)
+
+staging Area:
+
+	(local repo: where we add our content ad staging area)
+
+before adding it to remote repo we can verify. If its ok then we will add them to Remote Repository.
+
+Git Repository:
+
+Repository which contains our code with proper versioning with all changes.
+------------------------------------------------------------------------------------
+
+from workspace -->  add in staging area --> local repository --> Remote Repository.
+
+to complete this proces we have some set of git commands.
+
+1. git init : this basically initialize git repo in your local folder.
+
+2. git config: used to configure the user. to identify the user with its username or email id & password.
+
+3. git add : to add certain files to staging area.
+	     git add index.html (it will add index.html to staging area)
+
+4. git commit : to add files from staging area to its local repo
+		(this commiting the changes with its version and you can add a message as well)
+
+5. git status: display the state of your working directory and staging area.
+
+to work with the same we need to set up git to out local system and to upload to its remote repo we will create account to github.com
+
+After installation of git if you are geeting an error like git is not recognized as an internal or external command then follow the below step to set an environment variable.
+
+C:\Program Files\Git\bin  (copy this path)
+
+right click on your pc --> properties --> advance system settings --> click on environment variable. --> click on path --> click on new --> paste copied path and click ok --> ok --> ok --> refresh system and check the version again.
+
+================================================================================
+
+to push code on git repo
+
+step: create a folder named TestGit and add some files to that folder.
+
+	open that folder in cmd 
+
+	initialize git rep: git init
+
+	
+	to add files in staging area execute command
+	> git add file-name (git add index.html)
+	to check weather the added to its staging area or not
+	>git status
+
+	inf you want to add all files to the staging area then
+	>git add . (it will add all files to staging area)
+
+	add files from staging area to local repo
+	>git commit -m "This is my Version1"
+
+	to commit you files to some repository first config the user
+
+	>git config --global user.email "sonam@gmail.com"
+
+	(This command you need to execute only once not every time)
+
+	Let's create a repository on my github.com
+
+	Change branch from master to main
+	>git branch -M main
+
+	>git remote add origin https://github.com/sonam-niit/DemoRepo.git
+	(to set origin so when you execute push command your files uploaded to this folder which you have created just now)
+
+	>git push -u origin main
+	(this is basically push your code which is commited to your remote repository)
+	(for the very first time when you execute this command it will ask you for authentication select default authentication which is browsers authentication so it will pop up a git hub login in browser enter your correct emailid and password so once its authenticated, it will push all commited files from local repo to remote repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
