@@ -1,0 +1,191 @@
+HTML
+---------
+
+Hyper text markup language
+
+run this file -- you can directly run in browser
+
+save the file with .html or .htm extention.
+
+first.html (webpage)
+
+tags: <> keywords in angle bracket
+
+<html> start tag
+</html> close tag
+
+---------------------------------------------------------
+
+structure of my page
+
+here my html version is 5. its just indicating the document type. and provide information to your browser.
+
+<!Doctype html>
+<html>
+	<head>
+		//meta data
+		(data about the data which you will provide in your body)
+		//book title, authour name, publication, price, keywords
+	</head>
+	<body>
+		//content
+		//code
+		(my chapters details, all pages with data )
+	</body>
+</html>
+
+
+===============================================================================
+
+Headings we can include using diffrent headings tags
+
+from h1 to h6
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>
+
+to add paragraph
+<p>Write your paragraph</p>
+
+to work with the images we can use img tag
+
+<img>
+
+its having multiple attributes,
+
+src= where we will give path of image
+alt= alternative text (if image is not visible then it will show alternative text)
+height- we can add height (in px)
+width- we can add width (in px)
+
+<img src="" alt="text" height="300" width="300">
+
+
+for linkings pages use <a> tag
+
+a tag has one attribute href: hyperlink reference
+
+<a href="test.html">Test</a>
+
+when you click on test it will open test.html (file)
+
+we can also use target attribute to set target: where you want to open file
+
+_blank= it will open in new tag
+_parent= will open in parent window
+_top=will open in top window
+_slef=will open at the same location(default value)
+
+
+<hr> tag used to create horizontal line.
+
+to break the rows we are using <br>
+
+<pre> tag where you can give pre defined text.
+
+Formatting tags
+-------------------
+<b> make it bold
+<i> italic
+<u> underline
+<small> text small regular font
+<strong> make text stronger similar like bold
+<del> to give the strike on the content
+<ins> insert new content
+<sup> for superscript
+<sub> for subscript
+
+--------------------------------------------------------
+List: basically we can show data in the form of list
+
+list can be of 2 types
+
+1> ordered List: showing orders by using numbers, alphabet, roman numbers etc
+2> unordered list: show using some bullet points, circle, square symbol etc..
+
+ordered list: <ol> tag
+
+types: 1, A, a, i, I
+
+unordered list: <ul>
+
+types: disc, circle , square
+
+to add elements in any list use <li> tag
+
+<ol>
+	<li>item1</li>
+	<li>item2</li>
+</ol>
+
+<ul>
+	<li>item1</li>
+	<li>item2</li>
+</ul>
+
+=========================================================================
+Nested List: create list inside list
+
+<ol>
+	<li>item1</li>
+	<li>item2
+
+		<ul>
+			<li>sub item1</li>
+			<li>sub item1</li>
+		</ul>
+	</li>
+
+</ol>
+
+=========================================================================
+
+structure your content for that we can use 2 tags
+
+1. block display: always come in new line
+	<div></div>
+
+2. inline display: all comes in same line
+
+	<span> tag
+
+
+let's say
+
+seperate one product with its title, image and rating, i can seperate them using div tag.
+
+span tag is basically used to highlight some content in a same line, including some icons in a line.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
