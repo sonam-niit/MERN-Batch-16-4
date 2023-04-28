@@ -1,0 +1,271 @@
+Working Directory (Workspace)
+
+Working Area (where we will make our code)
+
+
+Staging Area--> code which you have created and you want to make it as a version so before adding it you want to se the preview so that can be added to staging area.
+
+Local Repository:
+A repository which is stored in Your computer.
+
+
+Remote Repository: Git Repository which is live and can accessible from any where.
+
+----------------------------------------------------------------------------------------
+
+Let's Understand the Git Basic commands
+
+1.git init: will help us to initialize empty repository to a perticular working area.
+
+2. git add: will add the content from working area to its staging area
+
+3. git commit: commit the code from staging area to Local Repository
+
+4. git push: push command will push the code from local repo to Remote (Git) Repository.
+
+==================================================================================================
+
+Let's set up a git hub account and configure github from our local system to remote.
+
+step 1: open github.com create new account
+
+step 2: open git download and download git for your operating system
+
+once git installed successfully you can check the version by opening cmd.
+
+>git --version (it will show you git version)
+
+first of all create a folder and add files which want to add to your repository.
+
+>right click on the folder and open git bash
+
+let's initialize an empty repository.
+
+>git init
+
+let's add the files to staging area
+
+>git add index.html (this will add index.html in staging area)
+
+to check the status you can execute below command
+>git status
+
+what if you want to add all files in staging area use below command
+
+>git add .
+
+to configure git to your local system
+
+>git config --global user.email "sonam@gmail.com" (this command you need to execute only once not everytime)
+
+for commit (add my code to local repo)
+
+>git commit -m "Version 1"
+
+To create Repository go to github.com and create new repository with some and description and then click on create.
+
+
+by default my brach name is master branch
+
+if you want to change branch 
+
+>git branch -M main
+(this will change your branch from master to main)
+
+to commect your local repository to remote need add origin (perticular folder is connected to which repository)
+
+>git remote add origin https://github.com/sonam-niit/SampleDemoGit.git
+
+(you need to add your repository origin)
+
+(add the remote repository origin to the location)
+
+>git push -u origin main
+
+(when you execute this command for the very first time it will ask you for the authentication. you select default authentication with browser: it will open github in browser login with your credentials so once logged in successfully you can see you code in github repository
+=====================================================================================
+
+branch setting, origin setting and account config you need to do only once.
+
+once its done for the first time from the second time when you wnat to push your code just execute below mentioned steps.
+
+1. git add .
+
+2. git commit -m "version details"
+
+3. git push -u origin main 
+
+your code you can see on github repo.
+
+==============================================================================================
+
+you made some changed in Remote repository which is actually not available in your local repo
+
+to get then to your local repo
+
+execute git pull command.
+
+===============================================================================================
+
+Git stash
+-------------------
+when we are working with multiple branches and if one brach you made some changes but you don't want to push and you want to switch the branch to make changes to other branch we can use stash command as temp storage.
+
+without push we can switch from one branch to another branch
+
+================================================================================
+
+Task: create one website for Mumbai tourism (index.html, about.html, historic.html, entertainment.html)
+
+push this folder to one github repository by executing the command which i have shown you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
