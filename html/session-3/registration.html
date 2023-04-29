@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="test">
+        <label for="fname">FirstName: </label>
+        <input type="text" name="fname" placeholder="Enter First Name" id="fname" disabled>
+
+        <label for="fname">LastName: </label>
+        <input type="text" name="lname" placeholder="Enter Last Name" id="lname">
+
+        <label for="uname">UserName: </label>
+        <input type="text" name="uname" placeholder="@SonamSoni" id="uname">
+        <br><br>
+        <label for="email">Email Id: </label>
+        <input type="email" name="email" placeholder="sonam@gmail.com" id="email">
+        <label for="dob">Date Of Birth: </label>
+        <input type="date" name="dob" id="dob">
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" placeholder="9998989856" id="phone">
+        <br><br>
+        <label for="profile">Profile Picture: </label>
+        <input type="file" name="profile" id="profile">
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age">
+        <br><br>
+        Languages Known:
+        <input type="checkbox" name="lang" id="end" value="eng" checked>
+        <label for="end">English</label>
+        <input type="checkbox" name="lang" id="hindi" value="hindi">
+        <label for="hinid">Hindi</label>
+        <input type="checkbox" name="lang" id="marathi" value="marathi">
+        <label for="marathi">Marathi</label>
+        <br><br>
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" id="gender" value="male" checked>
+        <label>Male</label>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" id="gender" value="other">
+        <label>Other</label>
+        <br><br>
+        <label for="edu">Education Details:</label>
+        <select name="edu" id="edu">
+            <option value="ssc">SSC</option>
+            <option value="hsc">HSC</option>
+            <option value="graduate">Graduate</option>
+            <option value="pg">Post Graduate</option>
+        </select>
+        <br><br>
+        <label for="address">Address</label>
+        <textarea id="address" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password Here">
+        <br><br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+Tables
+----------------------------------
+which can hold the data in the form of rows and columns.
+
+columns: field/ tuples
+
+row: records of the data which we are storing inside the same.
+
+show a students records I can create table with fields like id,name,email, password, address
+
+to create table in HTMl we will use table tag
+
+create rows-- <tr>
+create columns --<td>
+
+create heading columns <th>
+
+to seperate headings from out content in HTML
+
+<thead> and <tbody> tags
+========================================================================================================
+
+Forms: basically used to take input from the users.
+
+with the help of links user can just interact with the website like moving from one page to another page but if you want to take real inputs from the user like name, email, password, comments , like  that we can get it with the help forms.
+
+Types: Register form (signUp form)
+       Login Form (signIn form)
+       Query form
+       form to add post
+       form to add tweet
+
+
+How to create forms with the help of HTML
+-------------------------------------------------
+<form> tag
+
+atributes: action : trigger when you submit form
+	   method: indicated this form submitted with method like get or post
+
+to create inputs 
+
+we ask user to enter  any type data
+
+for that use input tag
+
+text --> input type=text
+email --> input type=email
+tel --> input type=tel
+number --> input type=number
+password
+upload a file
+select some button
+click on some boxes
+select some value from dropdown
+
+=====================================================================================
+Form Validation we can do with some attributes available in html tags.
+
+required: means field if required
+
+min-length: set the min length of input
+
+max-length: set max length of input.
+
+-----------------------------------------------------------------------------------
+For creating a dropdown we can use 
+
+<select> tag
+
+and diffrent options we can provide using option tag
+
+
+==============================================================================
+Allow user to enter values in multiple lines.
+
+<textarea rows="4" cols="50">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
