@@ -1,0 +1,175 @@
+Frames in HTMl
+-----------------------
+
+It is used to divide our browser window into multiple sections.
+In each section you can load a seperate html page.
+
+If I want to create a home page with multiple sections and load sepearte HTML pages then we can use Frames.
+
+We can use frameset tage earlier when we are using HTML4 version. this tags actually deprected in version 5 so we will use the latest one which is Iframe.
+
+if you want to load multiple frames using frame set use below code which supports only with old browsers.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <frameset rows="10%,20%,70%">
+        <frame name="header" src="header.html"></frame>
+        <frame name="side" src="sidebar.html"></frame>
+        <frame name="content" src="content.html"></frame>
+
+        <noframes>
+            <body>Browser Does no support Frames</body>
+        </noframes>
+    </frameset>
+</body>
+</html>
+=================================================================================================
+
+Iframe is basically helping us to load the seperate file or video or map in your page.
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/7HGon-9dlzs" 
+    title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+to include a youtupe video in a frame in HTML page.
+==============================================================================================
+
+Audio and Video files
+
+to include audion in a page <audio> tag
+
+<audio><audio>
+
+inside audio tag pass <source> tag with audio file.
+
+<source> tag 2 attributes
+src= file source
+type= audio file type like audio/mpeg or audio/ogg
+
+
+audio tag attributes by default they have true values
+autoplay= will play song automaticlaly when the page loaded which dependes on browser
+loop = repeat songs 
+controls= will add control to start, stop, increase and decrease volumes
+
+=================================================================================
+
+<Video> tag is used include the video in out HTML Page.
+
+===================================================================================
+
+HTML5 Semantic Tags
+------------------------------
+when include some content in our page, this tags shows us a meaning of that content.
+
+<header> : include the introductory information of page like title, logo
+
+<nav>: includes navigation links, so we can jump from one page to another, sometime you can combine nav with header as well, and you can use seperate as well.
+
+<main>: include the main content of the page. you can use only one main per page.
+
+<article> : includes some independent content , which is providing extra infor kind of blog
+
+<section> : to group the content of similar theme. forms are the part of a page to group all form conponents use section tag.
+
+<aside>: some content which is less important, to add some complementary details,
+
+<footer>: contact info, connect us info, copuright details, some kind of site navigation
+
+=============================================================================================
+<Details> tag
+
+is basically helping you to provide details section by clicking on some title
+
+title you can add using summary tag and details add using <p> tag
+
+<details>
+	<summary>Title</summary>
+	<p>Para</p>
+</details>
+
+=============================================================================================
+<picture> tag
+
+<picture>
+        <source media="(min-width:650px)"
+        srcset="frames/images/banner.avif" > 
+
+        <img src="frames/images/banner.avif" alt="myimage">
+    </picture>
+
+to provide more flexibility to developer to provide image resources.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
