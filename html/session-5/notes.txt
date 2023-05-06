@@ -1,0 +1,319 @@
+CSS
+----------------------------
+Cascading Style Sheet.
+
+Its a Styling language. With the help of this styling we can style out webpages.
+
+To style webpages we have so many properties available like
+
+background color
+font color
+font size
+font family
+border
+margin
+padding
+height
+width
+text-align
+
+by using this properties we can give some styling to our webpages.
+
+How to style?
+----------------------------------------------------------
+
+3 ways
+
+1. Internal Stylesheet:
+-------------------------------------------------------
+
+to include the stylesheet in html page use <style></style> tag
+this style tag written css will apply to that page.
+
+<style>
+	h2 {
+            background-color: blue;
+            color: white;
+        }
+</style>
+
+2. External Stylesheet:
+
+-- create seperate file of css with .css extention.
+-- include that file to any of your pages using link tag
+<link href="style.css" rel="stylesheet" type="text/css">
+
+href= file reference of the style whiich you want to include
+rel = relationship = value is stylesheet
+type= show the type of your file "text/css"
+
+(if you want to use some CSS only for single file then you should include it as internal CSS, but is the same or common CSS which you wnat to apply on multiple pages then you should use external CSS and include it in any of your webpage.)
+
+3. Inline Stylesheet:
+
+inline CSS helps you to give some perticular CSS to a tag. That you can include by using style attribute of any element.
+
+style="background-color:blue ; color:yellow"
+
+value must be seperated by semicolon (;),
+key value pait must be seperated using colon (:)
+
+
+Note: Style, link tag you can include any where like in head or body tag but for the code clarity we should put in <head> tag.
+
+====================================================================================================
+Selectors:
+
+which selects element of webpage and apply style to the element.
+
+h2{
+	color:"pink"
+}
+
+this is going to select all h2 tags in webpage and apply the color pink to it.
+
+1. Type / element selector
+
+-- just use the tag name and apply css.
+
+ 	div{
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            color: white;
+        }
+        h1{
+            background-color: blue;
+            color: white;
+        }
+
+it will select div tag and apply css to it and h1 tag apply css to it.
+
+2. Group Selector
+-----------------------
+
+apply same css to multiple elements.
+
+h1,h2,h3,p{
+            background-color: burlywood;
+            color: palevioletred;
+        }
+
+same css is applicable to h1,h2,h3 and p tag.
+
+3. Universal Selector
+-----------------------------------
+ like this selector will select all tag and apply css to it.
+
+*{
+	/* CSS code*/
+}
+
+  *{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aqua;
+        }
+it will apply the css to all your elements.
+
+
+4. Combinator Selector
+--------------------------------------------
+showing the relationship between the selectors.
+
+	a. descendant selector (space)
+	---------------------------------
+	div p{
+            background-color: aqua;
+            color: red;
+        }
+
+	selecting all elements that are the descendant of a specified element.
+	it will select all p tags of div tag like child, grand child, grand grand child as well
+
+	b. child selector (>)
+	----------------------------------
+	select only child elements of the specified element. select only the child of div tag.
+
+	div>p{
+            background-color: aqua;
+            color: red;
+        }
+
+	c. adjacent sibling selector (+):
+	-------------------------------------
+	selecting the direct sibling of an element which is adjacent (first sibling only)
+
+	div+p{
+            background-color: aqua;
+            color: red;
+        }
+
+	it will select only the p siblings of div tag.
+	
+	d. general sibling selector (~):
+	-----------------------------------------
+
+	selects all the elements that are siblings of specified element.
+	
+	 div~p{
+            color: brown;
+        }
+
+	it will apply the css to all siblings p of div tag.
+
+5. class selector
+----------------------------
+
+	start writing the class name with . symbol
+	you can give any class name.
+
+	.blue{
+		color:blue;
+	}
+	.green{
+		color:green;
+	}
+
+to apply the class on any element use class attribute of element ang give the class name.
+
+<p class="blue">this is my para</p>
+
+6. ID Selector
+-------------------------------------
+
+start writing the id name with # symbol
+name you can give anything
+
+#center{
+	text-align:center;
+}
+
+to apply on element use id attribute.
+<p id="center">My paragraph</p>
+
+*****************************************************************************************
+
+CSS Colors
+------------
+we give the colors in multiple formats.
+
+1. RGB: red green blue
+
+	rgb(red,green,blue)
+	define each parameters intencity from 0-255
+
+	0- 0% and 255- 100%
+
+	rgb(255,0,0) -- red color
+	rgb(255,255,0) -- yellow color
+
+2. Hex code: hexadecimal color code: combination 0-15 (combination of 16 letters)
+	0-9
+	a-f (10-a, 11-b, 12-c,13-d,14-e,15-f)
+
+	for e.g.
+	
+	#ffffff (white)
+	#000000 (black)
+	#ff0000 (red)
+
+3. RGBA (red, green, blue ,alpha)
+	alpha value is between 0.0 (fully transparent) to 1.0 (solid)
+
+	 color: rgba(255, 0, 0, 0.8)
+
+	try to change the values of last parameter and see the diffrence.
+
+4. HSL (hue, saturation, lightness)
+	
+	hue -- degree of color wheel (0-360)
+	saturation --percentage 
+	lightness- percentage
+
+	h1{
+            color: hsl(318.46deg 55.7% 41.97%);
+        }
+
+5. for ADDING transparency to your page use hsla color code -- alpha value between 0.0 to 1.0
+
+	h1{
+            color: hsla(318, 55.7%, 42%, 0.4);
+        }
+
+*********************************************************************************************
+Specificity
+-----------------
+calculating the priority of diffrent css applied to the page.
+
+specifity: 
+
+<h1>Heading 1</h1>
+<h1 class="blue">Heading 2</h1>
+<h1 class="blue" id="green">Heading 3</h1> 
+
+		id     class   type
+1ST HEAD	0	0	1       APPLY TYPE SELECTOR
+2ND HEAD	0	1	0	APPLY CLASS SELECTOR
+3RD HEAD	1	0	0	APPLY ID SELECTOR
+
+FROM ALL OF THIS THE MORE PRIORITY IS INLINE css.
+
+------------------------------------------------------------------
+
+when we include external CSS first and then internal then internal css will override the external CSS property.
+
+<link href="external.css" rel="stylesheet">
+<style>
+        h1{
+            color: red;
+        }
+    </style>
+
+-- all h1 elements color become red
+
+If extern included after internal then external is having more priority.
+<style>
+        h1{
+            color: red;
+        }
+    </style>
+<link href="external.css" rel="stylesheet">
+
+--> all h1 elements color become blue as per the external css.
+
+in both the cases inline is having highest priority.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
