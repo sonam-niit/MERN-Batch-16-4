@@ -1,0 +1,91 @@
+Margin
+-------------------
+
+basically indicating the gaps between the parent and the element.
+
+to give all side with same margin you can use margin property.
+margin:10px means it will gives the gap of 10px from all sides
+
+to give diffrent margins we can use diffrent properties
+
+like margin-top, margin-bottom, margin-left & margin-right
+give the values accordingly.
+
+For giving diffrent from all sides and want to use single margin property then remember the clock wise direction top,right,bottom & left and give values accordingly.
+
+margin: -7px auto auto auto;
+
+margin: auto will adjust your element in center from left and right side.
+========================================================================================
+
+Border to any element
+------------------------------------
+border-style: diffrent styles of border you can give
+
+border-width: how much width you want to give on your border(1px)
+
+border-color: which color border you want to give
+
+=====================================================================================
+padding is just- givings gaps between content and its border.
+
+Box-sizing property
+----------------------------------
+without using box sizing everytime when you include the the padding that is going to increase the width and height of your element which you can adjust using box-sizing border box property.
+
+Display
+---------------------------------
+How you want to display your elements in a page.
+
+by default each element is having its own display.
+
+like div, p , section,headings, article are having display as a block: means the each element will come in new line.
+
+few elements also have a display like they try to adjust in a same line (inline display)
+
+img, a, input tags, span etc..
+
+inline elements never accepts height and width to give the height and width you can set the display to block.
+
+---------------------------------------------------------------------------------
+
+to display elements as a block + display them in a line the use the display value to inline-block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
