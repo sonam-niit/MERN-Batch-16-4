@@ -1,0 +1,94 @@
+Flex Layout
+------------------------------------
+Flex box is trying to adjust the elements in one dimentional.
+
+--- Layout which we can create using flex is flexible layout.
+
+Property:
+
+display: flex -- it will try to adjust all the elements in a single row.
+
+flex-wrap: by default the value of fle-wrap is no wrap means it will adjust all the elements in one row. If you want to create multiple rows if the row completes then use value as wrap.
+
+	wrap-reverse: will wrap in new row if required and then display elements in reverse order.
+	(wrap meeans: if the row completed with elements then wrap the next elements in another row)
+flex-direction:
+
+	it desides how we want to display elements.
+	the default value is row.
+	if the value given as column: display the item vertically from top to bottom
+
+	column-reverse--> display item vertically from bottom to top.
+
+flex-flow:  if you want to combine flex-direction and flex-wrap together use flex-flow
+
+		flex-flow: row wrap;
+
+		first property value is for flex-direction & seond property value is for flex-wrap.
+
+justify-content: used to align items in flex-container.
+
+	flex-start: start from the flex start position
+	flex-end: start from the end
+	center: align elements in center
+	space-around: give the space around an element
+	space-evenly: distribute the space evenly in all elements
+	space-between: give the space between elements.
+
+align-items: helps to align flex-items properly.
+
+==============================================================================================
+
+Grid Layout
+-----------------------------------
+
+Here we can adjust our elements in 2 dimentions.
+we can adjust out elements in the combination rows and columns.
+
+to work layout use display as grid.
+
+to adjust grid with rows and columns use
+
+grid-template-column property and you can give the values seperated space acording to the no of columns you want in your grid.
+
+to give the gaps from both rows and columns use gap propery
+
+row-gap==> give gaps between rows
+column-gap==> give the gaps between columns.
+
+Grid Area
+------------------------------
+basically specifying  a name to the grid item
+ that we can use as reference in a grid container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

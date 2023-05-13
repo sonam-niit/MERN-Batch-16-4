@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 90px 350px 90px;
+            gap:2px;
+        }
+        .item{
+            background-color: aqua;
+        }
+        .grid-container .header{
+            grid-column: 1/3;
+        }
+        .grid-container .footer{
+            grid-column: 1/3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item header">
+            <h1>Header</h1>
+        </div>
+        <div class="item sidebar">
+            <h1>SideBar</h1>
+        </div>
+        <div class="item info">
+            <h1>Info</h1>
+        </div>
+        <div class="item footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
