@@ -1,0 +1,175 @@
+Advanced Selectors
+--------------------------------
+Pseudo classes in CSS
+
+used to define a special state of an element.
+
+Anchor pseudo classes
+-------------------------------------------
+
+default links 
+
+link: blue color
+visited links: purple color
+active link: red color
+
+if you want to change this we can use pseudo classess
+
+  a:link{
+            color: black;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:active{
+            color: greenyellow;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+======================================================================
+
+
+Calc function in css
+--------------------
+
+allows us to apply some math operations on length values.
+
+calc(100% - 45px);
+
+to do the calculations between diffrent units we can use calc function.
+
+Units in CSS
+---------------------------
+% -> percentage its dynamic unit
+in --> 1in== 96 px == 2.54 cm
+px --> pixels (static) --> 1px== 1/96th of 1 in
+pt --> 1pt ==> 1/72 of 1 in
+pc (picas) 1pc= 12 pt
+
+Relative lengths
+------------------------------
+
+1. em--> relative to the font-size of the element
+
+	(if the default font-size of an element is 16px then 2em= 32px)
+
+2. rem --> relative to its root element
+	   (browsers default value)
+
+3. vw --> relative to 1% of the width of viewport.
+4. vh --> relative to 1% of the height viewport
+
+------------------------------------------------------------------------------------------
+
+Advanced Margins
+---------------------
+
+1. CSS Margin Collapse
+------------------------------
+top ang bottom margins block are combined into single margin equals to the largets individual block margin.
+
+ .block-one{
+            margin: 20px;
+        }
+        .block-two{
+            margin: 30px;
+        }
+
+block 1 has margin-bottom: 20px and block 2 has margin-top: 30 px means it should give the margin of 50px but because of the collapse we are getting marging 30px inbetween.
+
+2. auto keyword in marging
+------------------------------
+auto with margin property we can align element in its container in a center.
+
+margin property take the width of an element and will split the space equally between left and right margins
+
+3. Overflow
+--------------------------
+basically when the content is larger then the container then use oferflow to include scrollbar in your element.
+
+auto: if it requires scrollbar then include
+scroll: element must shows scroll bar either it requires or not
+hidden: it will hide the overflow content.
+
+4. visibility
+-----------------
+
+hide the element with in the browser using visibility.
+
+visibility:hidden (hide element in browser but consume the space)
+
+display: none (totally remove element from browser DOM)
+
+========================================================================================================
+
+
+CSS Media Query
+--------------------------------------
+used to show diffrent output on diffrent screensize (view port)
+
+we can set media query for diffrent screen sizes and for diffrent media types
+
+media type: all, print, screen, tv, speech
+
+diffrent screen sizes( mobile, tablet, laptops and desktops)
+
+======================================================================================================
+
+CSS Reset
+--------------------------
+reset your CSS of all your HTML elements to its consistent baseline.
+
+all default browser values can be applied to all html elements called CSS Reset.
+
+reset the paragraph
+-------------------------
+p{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	line-height:1;
+}
+
+============================
+#test{
+	all:initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
