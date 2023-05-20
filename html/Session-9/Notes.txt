@@ -1,0 +1,300 @@
+JavaScript
+------------------
+Its a Scripting language.
+
+Write a script and execute scripts in a browser.
+
+Scripts running browser so its called as client side scripting.
+
+Whenever you want to do some user interaction we can use javascript for the same.
+
+History
+---------------------
+Brendan Eich who developed Javascript, its a scripting language which simply runs on browser side.
+
+How to Work with JS?
+------------------------------------------
+We can write a scripting code in a sepearete file and that we can include in our HTML file. when you run HTML file your script loaded in browser and browser responsible to execute JS code.
+
+All the browsers supports JS.
+-----------------------------------------------
+
+Include js in HTML?
+-----------------------------------------------
+
+1. Internal Javascript
+---------------------------------------
+
+	directly write the script code in HTML file.
+	use <script> tag and between script tag you can write your JS code.
+Note: Script tag you can include at any place, either in head tag or in body tag but the prefered one is you should put your script before the end of body tag.
+
+2. External JavaScript
+----------------------------
+create a seperate file and write a script code. include the script in html file
+
+seperate JS file extention must be .js and include that in your HTML using below tag.
+
+<script src="script.js" type="text/javascript" lang="javascript"></script>.
+
+
+************************************************************************************************
+Variable in JS
+
+variables are used to store the values (temporary storage)
+
+value can be anything like name, number, address, some result etc...
+
+so how to declare a variable?
+------------------------------
+use var keyword to declare a variable.
+
+var name
+var num1,num2
+var address;
+var phone;
+
+How to give values to this variable (Assigning a value to variable)
+
+var name="Sonam Soni"
+
+var address = 'mumbai'
+
+var num1=20;
+
+text values must be enclosed with single quote or double quote.
+
+
+How to give a name to this variable?
+------------------------------------------------
+1. better to give some meanigfull name don't give like a,b,c 
+2. variables name must start with letter and after that you can include some digits
+
+	a1,a2 are valid
+	1a,2b are not valid
+3. Variables are case sensitive means if you write Name & name are the diffrent.
+
+Let's Declare some variable and print those values in browser.
+
+
+to display the valued in a browser use document.write()
+
+to display values in a console log use console.log()
+
+----------------------------------------------------------------------------------------------
+Operators
+-------------------------------------
+
+1. Arithmetic Operators
+----------------------------
+
++(addition), - (subtraction), * (multiplication), / (divide), % (modulus) return reminder
+
+2. Assignment Operator
+--------------------------------
+
+assignement is the operator used to assign a value
+
+= operator is used to assign a value.
+
+a=10; // 10 values stored in a
+
+b=a; // a s values stored in b;
+
+res= num1+num2; means it will store the resultant value in res varaible.
+
+
+var result; //variable declaration
+result=67; //assigning a value to the declared variable
+
+these you can combine together
+
+var result=67; //declaration + assignment
+
+We have some sorthand assignment operator
+-----------------------------------------------
+
+increase the value of some varibale by 3
+
+num = num + 3;  ===>   num += 3
+
+num = num * 5   ===>   num *= 5
+
+num1 = num1 / num2  ===>  num1 /= num2
+
+3. Comparison Operator (Relational Operator)
+---------------------------------------------------
+
+ == (check wether the numbers or the values are same or not)
+
+ != (not equal)
+
+ < (less than)    <= (less than or equal)
+
+ > (greater than)    >= (greater than or equal)
+
+ === (compare values with its type)
+
+ !== (not equal with value and type)
+
+ ? : (ternary operator)
+
+------------------------------------------------------------------
+
+4. logical operator
+-------------------------------
+
+combine multiple conditions.
+
+&& -- (AND operator)
+
+(condition1) && (condition2)
+
+----> this overall condition becomes true only if both the conditions are true.
+
+
+|| -- (OR operator)
+
+
+(condition1) || (condition2) -- its true if any one of the condition is true.
+
+!(Not)
+ make the opposite of your condition
+
+true --> false
+
+false --> true
+
+
+5. increment and Decrement Operator
+-----------------------------------------------
+
+increase the value by 1 and decrease the value by 1.
+
+num++; ==> num = num +1;
+
+num--; ==> num= num-1;
+
+6. Type Operators
+----------------------------
+type of (tell you the type of your data)
+
+instanceOf (tell you weather the perticular object is the instance of a perticular type.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Operators
+
+Input from the use and process the data.
+
