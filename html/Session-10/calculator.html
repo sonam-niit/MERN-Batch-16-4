@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1= parseInt(prompt("Enter Number 1"));
+        var num2= parseInt(prompt("Enter Number 2"));
+
+        var opeartor= prompt("Enter any operator + - * /");
+
+        switch(opeartor){
+            case "+": alert("Addition: "+(num1+num2));
+                      break;
+            case "-": alert("Sub: "+(num1-num2));
+                      break;
+            case "*": alert("Mul: "+(num1*num2));
+                      break;
+            case "/": alert("Div: "+(num1/num2));
+                      break;
+            default: alert("Enter Correct Operator")
+        }
+    </script>
+</body>
+</html>

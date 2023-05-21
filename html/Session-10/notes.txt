@@ -1,0 +1,165 @@
+Condition
+---------------
+1. if statement
+
+check the condition and if the condition is true the execute that statement block.
+
+if(condition){
+	//statements
+}
+
+these statements will execute only if the condition is true.
+
+2. if else statement
+------------------------------
+
+if the condition is true then if block will execute.
+
+if the condition is false then else block will execute.
+
+if(condition){
+	//statements
+}
+else{
+	//statements
+}
+
+-------------------------------------------------
+1. WAP to print larger number from 2 numbers.
+2. WAP to check if the given number is even or odd. (num % 2 == 0)
+3. WAP to check if the given number is Divisible by 5.
+4. WAP to check if the entered number is Positive or Negative
+
+
+else if Ladder
+--------------------------------------
+What if you want to execute multiple condition one by one and atlast if the condition not satify then execute the else statement.
+
+We can use Else if ladder.
+
+if(condition){
+	//statements
+}
+else if(condition){
+	//statements
+}
+else if(condition){
+	//statements
+}
+.....
+
+else{
+	//statement
+}
+
+============================================================================================
+Task: WAP to get the time from the use and based on the time display Good Morning, Good AfterNoon, Good Evening & Good Night.
+
+  var hour= new Date().getHours();
+  alert(hour)
+
+   get the current hour and display greetings accordingly.
+
+Task2: Get the day from below code and displat the day accordingly
+        var day= new Date().getDay();
+        alert(day)
+if 0 = then sunday.
+
+==========================================================================================
+
+Nested If
+---------------
+
+if inside if called nested if.
+
+Sometime when situation is asking to check condition one after another then you can use nested if.
+
+if (main door open){
+	if(bed room door open){
+		if(access locker){
+		}
+	}
+}
+===============================================================
+
+Some More Task
+------------------------
+1. Write a Program to take input from user for emailId and Password.
+
+if emailId= admin@gmail.com
+password = admin123
+
+print successfully Logged In..!!!
+
+else print Incorrect Username or password.
+
+2. Ask user to enter Marks and calculate the average, if the average is more than 70% then user is eligible to take admission in Farmercy college.
+
+3. Write a program to get 3 values of angeles from the user and check with 3 values you can form triangle or not.
+	triangle= 3 angles total = 180
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
