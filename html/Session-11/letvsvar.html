@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var keyword is having a function scope
+        //let keyword is having a block scope.
+
+            //outer scope //function scope
+            var a=10;
+            console.log(a);//10
+            {
+                //inner if//block scope
+                let y=3;
+                console.log("Inside block "+a);
+            }
+            //console.log("ouside block "+y);
+
+            const pi=3.1415;
+            pi=22/7;
+        
+    </script>
+</body>
+</html>

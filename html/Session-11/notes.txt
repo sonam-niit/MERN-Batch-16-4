@@ -1,0 +1,215 @@
+let and const keyword having a block scope means you can access then till its block where it is declared.
+
+{
+	let y=20;
+	//this variable accessible here only
+}
+
+can't use outside of that block.
+
+Var keyword is having a function scope means if a variable declared like as below.
+
+function test(){
+
+	if(){
+		var x=20;
+	}
+
+	//here I can access that x variable 
+}
+
+const is constant once the value assigned we can not change it.
+
+=============================================================================
+Loops: iterative statements.
+
+if you want to execute same thing multiple times better we should use loop.
+
+3 types of loops available.
+
+1. while loop
+2. do while loop
+3. for loop.
+
+
+While Loop
+----------------------------------------------
+
+while(condition)
+{
+	//statements
+}
+
+check the condition, if the condition is true i will execute the statements.
+
+
+do while loop
+-----------------------
+do{
+	//write statements to execute
+}while(condition);
+
+it will execute do statements first then chekc the condition so if the condition true then again it will continue with do.
+
+here, the loop execute atleast one time wether the condition is true or false thats why these loop is called as Exit control loop.
+
+
+where as while loop is checking condition at first, if condition true then only it proceed otherwise it terminates. thats why it is called Entry Control loop.
+
+======================================================================================
+Tasks
+
+1. WAP to print your name 5 times with number
+	
+	o/p:
+
+		1: Sonam Soni
+		2: Sonam Soni
+		3: Sonam Soni
+		4: Sonam Soni
+		5: Sonam Soni
+
+
+2. WAP to print first 50 natural numbers in browser as well as in console.
+		o/p 1
+		    2
+		    3
+		    ................................
+		    50
+
+3. WAP to print first 50 odd numbers
+	o/p
+		1
+		3
+		5
+		7
+		....................
+		99
+
+4. WAP to print first 50 even numbers
+	o/p
+		2
+		4
+		6
+		8
+		....................
+		100
+
+All the above programs execute with both while loop and do while loop.
+
+
+For loop
+--------------------------------------------
+Popular loop while working with some Arrays.
+
+this loop accepts 3 parameters sepearted by semicolon.
+
+para1: initialization
+para2: condition
+para3: increment/decrement.
+
+
+for(let i=1; i<=10; i++){
+	//set of statements for iteration
+}
+
+all this para executes everytime? no first initialization execute only once when the loop starts.
+where condition and increment will execute everytime.
+
+as per above loop
+i=1 initialized
+
+check condition 1<=10 true print 1 increment i by 1 (i=2)
+check condition 2<=10 true print 2 increment i by 1 (i=3)
+check condition 3<=10 true print 3 increment i by 1 (i=4)
+.
+.
+.
+.
+check condition 9<=10 true print 9 increment i by 1 (i=10)
+check condition 10<=10 true print 10 increment i by 1 (i=11)
+check condition 11<=10 false loop terminated.
+
+
+this loop also condition checks first so it is also called as exit control loop.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
