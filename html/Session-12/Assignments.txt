@@ -1,0 +1,52 @@
+1. WAP to print first 50 even numbers using for loop.
+2. WAP to print the table of 6.
+3. WAP to print factorial of 5. (5*4*3*2*1)
+4. WAP to calculate the sum of first 10 natural numbers and print the sum.
+    (1+2+3+4+5+6+7+8+9+10)
+5.WAP to take input from the user and print its reverse number.
+    if input is 12345  then output must be 54321
+    Hint: 
+            reverse=0;
+            rem= num%10; 
+            num= num/10; 
+            reverse= reverse * 10 +rem;
+
+6. WAP to take 10 inputs fro user and based on the user input display number of 
+    positive count, negative count and 0 count.
+
+    if you enter 10,0,-20,9,-7,0,30,80,78,-56
+
+    it will display
+    count of positive: 5
+    count of Negative: 3
+    count of Zero: 2
+
+7. Using Nested loop print below pattern
+    1
+    2 3
+    4 5 6
+    7 8 9 1
+    1 2 4 5 6
+    7 8 9 1 2 3
+
+8. Print the same star pattern using while loop.
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

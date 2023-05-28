@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greetings(){
+            var test="test test";
+            if(true){
+                //block variables
+                var name="apple";
+                let num=30;
+            }
+
+            console.log("Block Scope Var "+name);
+           // console.log("Block Scope let "+num); //will give ref error
+        }
+        greetings();
+        //functional variable can not accessible outside the function
+        // console.log("Function variable "+test) //will give ref error
+    </script>
+</body>
+</html>

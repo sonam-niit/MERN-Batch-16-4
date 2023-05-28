@@ -1,0 +1,176 @@
+Working of For loop
+----------------------------
+for(initialization; condition;increment/decrement)
+{
+	//set of statements
+}
+
+initilization execute only once when the loop started
+condition and increment & Decrement executes after every iteration.
+
+Nested Loops
+-----------------------------
+
+loop inside a loop called Nested Loops.
+
+usually we are using loops while printing Patterns.
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
+Here in this pattern we have 5 rows and 5 columns.
+
+first row has only 1 column
+second row has 2 column
+3rd row has 3 column
+4th row has 4 column
+and 5th row has 5th column.
+
+here we required 2 loops 1 for row and another for col.
+
+
+***********************************************************************************
+Scope
+-----------
+scope means at which scope you can access the variable.
+(defines the visibility / accessibility of variables)
+
+variable having 3 types of scope.
+
+1. global scope (accessible every where)
+2. Function scope (accessible till the function)
+3. Block scope(accessible til that block {})
+
+
+Global Scope
+-------------------
+you are declaring varible in a script directly
+
+here you can declare varible either with let/const/var all considered as global variable.
+
+but if you declare global variable using var keyword --> become window Object
+
+if you declare global variable using let keyword --> not become window Object
+
+global variable removes from Memory when you close that tAB where page executed.
+
+Functional Scope
+----------------------------------------
+variable is accebile inside a function either you declare using let/ const/ var
+
+not accessible outside the function.
+
+if you trying to access will give you ref error.
+
+when function execution completed variable deleted from the memory.
+
+Block Scope
+-----------------
+accessible till its block {}
+if you trying to access outside the block can give ref error.
+
+here, var keyword is having a function scope so if you declare a variable using var keyword in a block scope then also it is accessible till its function.
+
+let and const variable removed from memory once the block executed.
+
+
+***************************************************************************************
+How to solve a Problem in Javascript
+------------------------------------------
+
+you can use diffrent design patterns.
+
+1. module approach
+-----------------------
+if you working on a big project then divide your project into small modules and then start implementing project.
+
+Calculator program:   add functionality/ divide/ multiply/ sqrt/ cube/ power/ sign/cos/cot/tan/
+
+---------------------------------------------------------------------------------------
+
+if i will use OOPS approach the i can create diffrent ways of programming
+
+
+1. Creational Design Pattern: differnt approch of creating object
+	singleton 
+	Factory method
+	abstract factory method
+	builder pattern
+	prototype pattern
+2. Structural Design Pattern: focusing on structure of object
+	adapter
+	decorator
+	facade
+	proxy
+3. Behavioral Design Pattern: focusing on behavior of an object
+	iterator
+	observer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

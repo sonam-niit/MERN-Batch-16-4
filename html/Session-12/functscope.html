@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greeting(){
+
+            let name="sonam soni";
+            console.log("Name "+name);
+
+            if(10>3){
+                let num=20; //block scope variable
+                console.log("Block Scope "+num);
+                console.log("Block Scope "+name);
+            }
+
+            //console.log("Block Scope "+num); //give error
+        }
+        greeting();//call the function to run it
+        console.log("Outside of function "+ name);
+        console.log("Block Scope "+num);
+    </script>
+</body>
+</html>

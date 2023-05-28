@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dummy(){
+            //assign value to variable without declaring the same
+            myName="Sonam Soni";//Global Variable
+        }
+        dummy();
+        console.log("My Name "+myName)
+        //if you declare global variable using var keyword then it is considerd as
+        // window object
+        var brandName="Eduonix";
+        console.log("Brand Name "+window.brandName);
+
+        //if you declare global variable using let keyword then it is not 
+        //considerd as window object
+        
+        let courseName="MERN";
+        console.log("Course Name "+window.courseName);
+    </script>
+</body>
+</html>
