@@ -1,0 +1,117 @@
+Strings
+--------------------------
+whenever you want to store textual information we need strings.
+usually we write strings in double quotes, single quote will be also fine.
+
+value of string is also called as string literal
+to attach value in our console or document you can use `` symbol and print value use ${variable name}
+
+let name="Sonam Soni"; //double quote valid
+let address='mumbai'; //single quote valid
+
+inside a double quote string we can use single quotes.
+
+let message="Congratulations...!! you secured '90 %' "
+
+what if you want to all double quotes in your message.
+
+let info="My Name is "Sonam Soni", I am MERN Instructor";
+(this is not valid)
+
+use Escpe Characters.
+single quoute \', 
+double \"
+slash \\
+
+===================================================================
+Strings used as an Object.
+
+let name="Sonam Soni" //string literals
+
+let name1= new String("Sonam Soni"); //String Objects
+
+========================================================================
+
+
+String methods
+------------------------------
+
+
+1. Length: lets get the length of my string.
+
+2. Slice: we can extract some part of out string using slice.
+
+let slice= name.slice(0,7);
+
+0 - start index
+7- end index
+
+means you will get the sliced value from start - (end-1)
+
+resultant value will be (0-6)
+
+--> what if you will not add end index.
+let slice1= name.slice(6);
+
+start from 6th index till last.
+--> what if you enter negative index.
+(negative couting done from the end of the string)
+
+3. sub string method
+
+---->substr(0,7)
+
+---> strating from 0 index and take the length till 7.
+
+4. Replace Method:
+
+form replacing a content from some content.
+
+if you want to replace only first match then use replace method, to replace all ,matched then use replaceall method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

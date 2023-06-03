@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name="Sonam Soni";
+        
+        let len= name.length;//its a property variable of String
+        document.write("Length of my String "+len+"<br>")
+        
+        let slice= name.slice(0,7);
+        document.write(`Sliced value: ${slice}<br>`)
+        let slice1= name.slice(6);
+        document.write(`Sliced value: ${slice1}<br>`)
+        let slice2= name.slice(-9);
+        document.write(`Sliced value: ${slice2}<br>`)
+
+        let sub1= name.substr(0,5)
+        document.write(`Sub String value: ${sub1}<br>`)
+
+        let message="Good Morning Everyone";
+        let newMessage= message.replace("Morning","Evening");
+        document.write(`Replaced value: ${newMessage}<br>`)
+
+        let data= "Heloo, User, your details mentioned below, User:1";
+        let newData= data.replaceAll("User","Folks");
+        document.write(`Replaced value: ${newData}<br>`)
+        //remove case sensitivity
+        let message1="Good Morning Everyone";
+        let newMessage1= message.replace(/MorNing/i,"Evening");
+        document.write(`Replaced value: ${newMessage1}<br>`)
+
+    </script>
+</body>
+</html>

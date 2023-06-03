@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name= "sonam soni";
+        let nameobj= new String(name);
+
+        document.write(`Check just values ${name==nameobj} <br>`) //true
+        document.write(`Check Objects ${name===nameobj} <br>`) //false
+
+        let obj1= new String("Sonam");
+        let obj2= new String("Sonam");
+        document.write(`Check just values ${obj1==obj2} <br>`)//true
+        document.write(`Check Objects ${obj1===obj2} <br>`)//false
+    </script>
+</body>
+</html>
