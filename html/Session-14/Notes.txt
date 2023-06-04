@@ -1,0 +1,45 @@
+Excersises of String
+----------------------
+1. Ask user to enter an input string using prompt.
+   if the users entered string's length is less than 5 then show an alert message, the inout must be 5 characters long.
+   if valid value then display alert message with welcome user's name.
+
+2. Ask user to enter a full Name.
+   show the name intoabrevieted from.
+
+    Sonam Soni
+    --> welcome "Sonam S"
+
+    Nadita Vora
+    --> Welcome "Nadita V"
+
+3.Convert my String into parameterize string
+
+	this is my javascript code
+	o/p: this-is-my-javascript-code
+
+4. Swap the case of entered values.
+	pyTHon ---> PYthON	
+
+	AbCdEf--> aBcDeF
+
+5. Repeate Strings
+
+	enter String: Ha!
+	      repeat:3
+		Ha!Ha!Ha!
+
+6. Check if the string is palindrom or not?
+
+	Palindrom means: if you read the string from start to end or end to start its same.
+	eg. malayalam
+	    jahaj
+
+	Hint: convert string to its reverse string
+
+
+
+
+
+
+

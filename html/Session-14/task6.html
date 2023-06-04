@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input= prompt("Enter any string");
+
+        let reverse="";
+        for(let i=input.length;i>=0;i--){
+            reverse+=input.charAt(i);
+        }
+        document.write("Original "+input+"<br>")
+        document.write("Reverse "+reverse)
+
+        if(input==reverse){
+            document.write(`<br> The ${input} is palindrom`)
+        }else{
+            document.write(`<br> The ${input} is Not palindrom`)
+        }
+    </script>
+</body>
+</html>

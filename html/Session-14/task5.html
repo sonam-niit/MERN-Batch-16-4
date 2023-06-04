@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str= prompt("ENter String")//xx!!!
+        let repeate= prompt("Enter Repeate"); //3
+
+        if(repeate>0){
+            let newStr=''
+            while(repeate>0){
+                //newStr = newStr.concat(str);
+                newStr+=str//xx!!xx!!xx!!
+                repeate--; //2 1 0
+            }
+            document.write("Value "+newStr)
+        }
+        else{
+            alert("Repeat must be greter than 0")
+        }
+    </script>
+</body>
+</html>

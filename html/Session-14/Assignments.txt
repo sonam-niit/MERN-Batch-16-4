@@ -1,0 +1,48 @@
+1. Write a prog to get a title from user and convert it into Title Case.
+
+	Chings Corner Restorant
+	title: Chings corner restorant
+
+	take the first char-- convert it in capital
+	slice others and convert them in lowercase.
+2. WAP which takes input from the user and check the word exist in that input.
+
+	str=welcome to the world of Javascript
+	check=world 
+
+	it should say: yes
+	Hint: use includes method.
+
+3. WAP to ask user to enter emailId. If emailId ends with (.com) then show the emailId valid, other wise show, incorrect Email Id.
+
+	Hint: endsWith(email,".com");
+
+4.WAP to take input from the user and show howmany vowels are there in the string.
+	str: maharastra
+	check: a
+
+	dispaly count= 4
+5. Write a program to take 2 inputs from the user compare them, if they are same then show both the strings are same other wise show both the strings are diffrent.
+
+	case: if strings are same but the cases are diffrent then also it should show same string
+
+	str1="sonam"
+	str2="SONAM"
+	op= same
+6. WAP to get input from the user and show the first and last occurance of a given number,
+	use- indeOf and lastIndexOf() Methods
+
+	str-Maharastra
+	input- a
+	op/
+	a occured first time at Index: 1
+	a occured last time at Index:9 
+	
+	
+
+	
+
+
+
+
+
