@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray= new Array(10);
+        //new keyword used to create array objct and 10 is the size of my array
+
+        //inserting array manually is time consuming
+        // myArray[0]="Sonam";
+        // myArray[1]="pooja";
+
+        for(let i=0;i<myArray.length;i++){
+            myArray[i]=prompt("Enter Any Number")
+            //loop will repeat 10 times and store values till index 9
+        }
+        //Again if you print then use another loop
+        for(let i=0;i<myArray.length;i++){
+            document.write(`<br>${i+1}Number: ${myArray[i]}`);
+        }
+    </script>
+</body>
+</html>

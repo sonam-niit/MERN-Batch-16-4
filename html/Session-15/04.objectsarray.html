@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj1={id:1,name:"sonam",email:"sonam@gmail.com",country:"india"}
+        const obj2={id:2,name:"alex",email:"alex@gmail.com",country:"UK"}
+        const obj3={id:3,name:"bob",email:"bob@gmail.com",country:"US"}
+
+        let array=[obj1,obj2,obj3]
+
+        for(let x of array){
+            document.write(`Id:${x.id},Name: ${x.name},Email: ${x.email},Country: ${x.country}<br>`)
+        }
+
+        
+    </script>
+</body>
+</html>

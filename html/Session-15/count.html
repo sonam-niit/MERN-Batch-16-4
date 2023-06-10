@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text=prompt("Enter Any Text");
+        let count=0;
+        for(let i=0;i<text.length;i++){
+            let char= text.charAt(i).toLowerCase();
+            console.log(char)
+            if(char=='a'|| char=='e'||char=='i'|| char=='o'|| char=='u'){
+                count++;
+            }
+        }
+        document.write(`Text is ${text}<br> No of Vowel's Count ${count}`)
+    </script>
+</body>
+</html>

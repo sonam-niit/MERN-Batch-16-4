@@ -1,0 +1,78 @@
+Array
+------------------
+Sequence of data called array
+
+declare 3 numbers:
+
+let num1,num2,num3;
+
+//declare 3 variables with 3 diffrent names.
+
+declate 100 numbers to store 100 values.
+
+--> if you want to declare a variable with one name but storing multiple values of same type called array.
+
+-->let num = [1,2,3,4,5,6,7,8,9]
+
+variable name is 1 then how it stores values at diffrent locations?
+
+that we can identify using index number
+
+num[0]= 1;
+num[1]=2;
+num[2]=3
+
+always remember: array index starts from 0
+
+--> if you have array of 5 elements the index will be 0-(n-1)
+
+Let's understand the Array Methods
+-----------------------------------------------------
+1. push()
+
+array.push(10);
+
+insert element inside your array
+
+--> insert element at last index.
+
+2. pop()
+
+remove element from an array
+
+3. unshift()
+
+insert element at first index (0)
+all other elements are shifted to its next index.
+
+4. shift()
+
+remove the element from first Index.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
