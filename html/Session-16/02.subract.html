@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const salary=5000;
+        const deductions=[1800,50,300,40,60,200]; //expenses
+        const res=deductions.reduce((acc,curr,index)=>{
+            return acc-curr},salary);
+        //5000-1800-50-300-40-60-200
+        document.write(`Savings ${res}`)
+
+    </script>
+</body>
+</html>

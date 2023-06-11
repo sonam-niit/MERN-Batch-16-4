@@ -1,0 +1,33 @@
+1. Map: is used to generate one array from another array
+
+-- it will not impact on original array
+-- its return type is array
+
+2. ForEach:
+
+is used to only iterate and print elements of an array
+
+-- its return type is void means its not returning any thing
+
+3. Filter Method is used to fillter your data and return filtered data as array
+
+	-- this method will filter your data and provide resultant array
+	-- it will not change the original array
+
+4. find method: will find the value and return it if it is available
+
+	-- find method will return first match
+	-- it will not check other numbers if it has already found the value.
+5. findIndex method to get the index where match found.
+	--return index number
+
+
+
+
+
+
+
+
+
+
+

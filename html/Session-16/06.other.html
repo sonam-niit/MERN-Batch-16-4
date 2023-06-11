@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[3,67,89,56,4,0,9];
+        array.sort((a,b)=> a>b? -1 :1);
+        console.log(array)
+
+        //check all numbers which satisfy the condition or not
+        //return a result in single boolean value
+
+        const result =array.every((value)=>value%2==0)
+        document.write(`All numbers are even: ${result}<br>`)
+
+        //check if any numbers present in array are even?
+        const result1 =array.some((value)=>value%2==0)
+        document.write(`All numbers are even: ${result1}`)
+    </script>
+</body>
+</html>

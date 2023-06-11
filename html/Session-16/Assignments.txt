@@ -1,0 +1,120 @@
+Task 1: use Reduce Method
+------------------------------------
+
+let cart=
+[
+	{
+	  product:'pen',
+	  qty:10,
+	  price:15
+	},
+	{
+          product:'Memory Card',
+	  qty:2,
+	  price:299
+	},
+	{
+	  product:'book',
+          qty:1,
+	  price:70
+	}
+]
+
+Hint: iterate with this array and print total amount
+	sum= sum+ (qty * price) 
+
+	initial value start with 0;
+
+Task-2:
+const students=[
+	{name:"alex",phy:89,chem:90,bio:91},
+	{name:"bob",phy:81,chem:67,bio:78},
+	{name:"catherine",phy:35,chem:40,bio:65},
+	{name:"devid",phy:90,chem:95,bio:75},
+]
+
+use map method and generate another array showing average of three marks
+
+resultant Array:
+
+const studentsAvg=[{name:"alex",avg:"90"},{name:"bob",avg:"90"},{name:"catherine",avg:"90"},{name:"devid",avg:"90"}]
+
+Task-3:
+--------------------------------------------
+const array= [90,89,56,88,77,53,91,64,23,44];
+
+ 1. filter only even numbers from this array.
+
+ 2. find Index of the number 53 and pring index as well as its value.
+
+
+Task-4:
+--------------
+
+create one object array of food items.
+
+[
+	{id:1,name:'buger',price:199},
+	{id:2,name:'fries regular',price:79},
+	{id:3,name:'fries jumbo',price:149},
+	{id:4,name:'float coke',price:59}
+]
+
+filter data with the price less than 100 and another filter with between 100-200.
+
+//show like under budget and over budget values.
+
+
+Task:5
+----------------
+
+create one empty array, take user input and store 10 array inside that empty array using push method.
+
+--> adjust the inserted numbers into descending order.
+
+--> Hint:
+	<script>
+        const array=[3,67,89,56,4,0,9];
+
+        array.sort((a,b)=> a>b? -1 :1);
+
+        console.log(array)
+     </script>
+
+
+Task 6:
+-------------------
+
+create 2 two-dimentional arrays and try to add elements of 2 dimentional array
+
+Array1                Array2
+1    2    3         4    5   6
+8    0    6    +    1    3   5
+7    1    2         5    1   4
+
+resultan Array
+
+5    7    9
+9    3    11
+12   2    6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray=[23,78,89,45,90,56,74];
+
+        let sum=0;
+
+        for(let x of myArray){
+            sum=sum+x;
+        }
+        document.write(`Sum of ${myArray} is ${sum}<br>`)
+        console.log("Sum is "+sum)
+
+        //reduce method
+        //taking multiple values and getting resultant value as single value
+        const myresult=myArray.reduce((sum,value)=> sum+value)
+        
+        document.write(`Sum of ${myArray} is ${myresult}<br>`)
+    </script>
+</body>
+</html>

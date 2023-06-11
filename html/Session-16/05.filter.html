@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const ages = [10, 22, 45, 67, 90, 9, 35, 2, 8, 90, 90]
+        //filter the data who can vote
+
+        const filter = ages.filter((value) => value >= 18)
+        document.write(`Filtered Data: ${filter}<br>`)
+
+        //find a single record (90 is available?)
+        const find = ages.find((value, index) => { return value == 90 });
+        document.write(`Found Data: ${find}<br>`)
+
+        const foundIndex = ages.findIndex((value) => value == 90);
+        document.write(`Found Index: ${foundIndex}<br>`)
+        //getting all 90's index
+        const found90s = ages.filter((value, index) => value==90);
+        document.write(`90 repeated for: ${found90s.length} times<br>`)
+
+        const found90s1=ages.filter((value,index)=>{
+            if(value==90){
+                console.log(index);
+                return index;
+            }
+        })
+        document.write(`90: ${found90s1} values <br>`)
+    </script>
+</body>
+
+</html>
