@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function test(num1, num2 = 45) {
+            if (num1 > num2)
+                console.log(`${num1} is larger`);
+            else
+                console.log(`${num2} is larger`);
+        }
+
+        test(34,9);// num1=34,num2=9
+        test(67);// num2=67 and num2=45
+        test(8);  //num1=8, num2=45
+    </script>
+</body>
+
+</html>

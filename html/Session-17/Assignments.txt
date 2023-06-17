@@ -1,0 +1,12 @@
+1. WAP to get firstname, middle name and last name from input field and then show the full using alert when user click on submit button.
+
+2. WAP for creating a button and by clicking on button load the data in <p> tag using javascript.
+
+	just load a simple message="Welcome to the world of JS"
+
+3. WAP to create a simple array of names and load the data of array in HTML list tag.
+
+
+
+
+

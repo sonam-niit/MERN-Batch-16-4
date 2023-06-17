@@ -1,0 +1,41 @@
+Functions:
+----------------------
+Methods or some limited lines of code which is basically written to complete some certain task.
+
+If you want to do many things at the same time we can create functions and whevenr you want to use them then you can call and use it.
+
+How to create a function
+---------------------------
+
+function name(){
+	//block of code
+}
+
+we can also pass multiple parameters to the function
+
+funtion name(num1,num2){
+	//block of code
+}
+
+-------------------------------------------------------------------------------------
+When we working functions we can also create default parameters in function.
+--> if you pass parameter then it will take your parameter but if you will not pass then it will use the default one.
+
+function test(num1,num2=45){
+	if(num>num2)
+		console.log(`${num1} is larger`);
+	else
+		console.log(`${num2} is larger`);
+}
+
+
+
+
+
+
+
+
+
+
+
+

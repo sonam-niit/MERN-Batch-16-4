@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[12,56,78,90,34,76,32,10];
+        let found=false;
+        const temp =prompt("Enter number to search");
+
+        for(let i=0;i<array.length;i++){
+            if(array[i]==temp){
+                found=true;
+                console.log( `${temp} found`);
+                break;
+            }
+        }
+        if(!found){
+            console.log( `${temp} Not found`);
+        }
+    </script>
+</body>
+</html>

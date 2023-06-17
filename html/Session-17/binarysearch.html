@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[3,9,15,20,25,32,69,70,83];
+        let left=0;
+        let right=array.length-1
+
+        const num=prompt("Enter number to search")
+
+        while(left<=right){
+            let mid=Math.floor((left+right)/2)
+
+            if(array[mid]==num){
+                console.log(`${num} Found at index ${mid}`)
+                break;
+            }
+            else if(array[mid]>num){
+                right=mid-1;
+            }
+            else{
+                left=mid+1
+            }
+        }
+        if(left>right){
+            console.log(`Element not found`)
+        }
+    </script>
+</body>
+</html>

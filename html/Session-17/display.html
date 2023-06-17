@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">Show Data</button>
+    <table id="data">
+        
+    </table>
+    <script>
+        const data=[
+            {id:1,name:"pencil",price:10,rating:4.5},
+            {id:2,name:"Pen",price:10,rating:4.5},
+            {id:3,name:"Eraser",price:10,rating:4.5},
+            {id:4,name:"Scale",price:10,rating:4.5}
+        ]
+
+        function show(){
+
+            let html=`<thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+        </thead><tbody>`;
+
+            for(let obj of data){
+                html+=`<tr><td>${obj.id}</td>
+                    <td>${obj.name}</td>
+                    <td>${obj.price}</td>
+                    <td>${obj.rating}</td></tr>`
+            }
+            html+='</tbody>'
+            document.getElementById('data').innerHTML=html
+            document.getElementById('data').style.color="red"
+            document.getElementById('data').style.backgroundColor='aqua'
+        }
+    </script>
+</body>
+</html>

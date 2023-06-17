@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function defination
+        function print(){
+            console.log("Hello World")
+        }
+        function add(a,b){
+            let result= a+b;
+            console.log("Result "+result)
+        }
+
+        //function Calling
+        print();
+        add(23,45);
+
+        //function can return value as well
+        function cube(num){
+            return num*num*num;
+        }
+        let result= cube(5);
+        console.log(`result is ${result}`);
+
+        console.log(`result is ${cube(3)}`)
+    </script>
+</body>
+</html>
