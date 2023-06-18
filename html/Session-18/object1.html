@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employee={
+            id:1,
+            name:"tata digital",
+            email:'tataskills@gmail.com'
+        }
+        console.log(employee);
+        employee.year=2000;
+        console.log(employee);
+
+        delete employee.email;
+        console.log(employee);
+
+        const user={
+            id:1,
+            firstname:"alex",
+            lastname:"devid",
+            email:"alex@gmail.com",
+            address:{
+                city:"mumbai",
+                state:"maharastra",
+                zipcode:"557522"
+            },
+            fullname: function(){return this.firstname+" "+this.lastname}
+        }
+        console.log(user)
+        console.log(`${user.firstname} is city is ${user.address.city}`)
+        console.log(user.fullname())
+    </script>
+</body>
+</html>

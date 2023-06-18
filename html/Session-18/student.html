@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="id">
+    <input type="text" id="name">
+    <input type="text" id="email">
+    <input type="submit" value="add" onclick="save()">
+    
+    <div id="result"></div>
+    <script src="class.js"></script>
+    <script>
+        let array=[]
+        function save() {
+
+            let id = document.getElementById('id').value;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+
+            let obj = new Student(id, name, email);
+            array.push(obj);
+            display();
+
+            document.getElementById('id').value=""
+            document.getElementById('name').value=""
+            document.getElementById('email').value=""
+        }
+        function display(){
+            html=`<table><tr><th>Id</th><th>Name</th><th>Email</th></tr>`;
+            for(let x of array){
+                html+= x.display();
+            }
+            document.getElementById('result').innerHTML=html
+            
+        }
+    </script>
+</body>
+
+</html>

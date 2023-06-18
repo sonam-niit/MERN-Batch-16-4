@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account{
+            constructor(accNo,holderName,balance){
+                this.accNo=accNo;
+                this.holderName=holderName;
+                this.balance=balance;
+            }
+            print(){
+                console.log("Account No: "+this.accNo)
+                console.log("Account Holder Name: "+this.holderName)
+                console.log("Balance: "+this.balance)
+            }
+        }
+        //to reuse functionality
+        //extend the class and that class will become parent class
+        class SavingAccount extends Account{
+
+            constructor(accNo,holderName,balance,rateOfIntrest){
+                super(accNo,holderName,balance);
+                this.rateOfIntrest=rateOfIntrest
+            }
+            print(){
+                super.print();
+                console.log("Rate Of Intrest: "+this.rateOfIntrest)
+            }
+        }
+
+        let sonamAcc= new SavingAccount("SBI0001","Sonam Soni",100000,5.6);
+
+        sonamAcc.print();
+    </script>
+</body>
+</html>

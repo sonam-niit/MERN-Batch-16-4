@@ -1,0 +1,72 @@
+Task1: create a project which contains employee class with constructor(id,name,department,salary)
+
+method printData();
+
+--> html assign value from inputs and display in List.
+
+Task2: Create Todo list application which contains class of todolist
+
+	class TodoList{
+
+		constructor(){
+			this.todos=[];
+		}
+
+		addTodo(task){	
+		}
+
+		deleteTodo(task){
+		}
+		
+		showAllTodos(){
+		}
+	}
+
+	include this file in your HTML and attach with your HTML inputs
+
+	if user enters values add it in your object and print below if user click on delete button then delete value from todos.
+
+
+Task 3: Write a program in js and create functions for cube, square, power and write logic like ask user to enter 1/2/3 based on that call the functions and show the result.
+
+Task 4:  write a programm to get input from user in the form of string and reverse the string and check either string is palindrom or not.
+
+	convert your string into array
+	array has reverse function get the reverced string from array and then check original string and reversed string and if theya are same then print its palindrom.
+
+Task 5:
+
+	write a function to print array.
+
+	while calling functions pass different arrays an print using functions.
+
+	print([1,2,3,4,5,6,7]);
+	print(["a","b","c",d","e"]
+	print([{id:1,name:"test"},{id:2,name:"hello"}])
+
+	it should print all types of array from same function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user= new Object();
+        user.firstName="sonam";
+        user.lastName="soni";
+        user.age=32;
+        user.email='email@gmail.com'
+
+        console.log(user)
+
+        const user2=user;
+        console.log(user2)
+
+        console.log(user===user2)//both are pointing to same memory
+        //both objects are using same references its not assigning a copy value to user2
+
+        user2.age=45;
+        console.log(user)
+    </script>
+</body>
+</html>

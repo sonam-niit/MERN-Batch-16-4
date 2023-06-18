@@ -1,0 +1,44 @@
+OOPS
+------
+
+object oriented programming structure (approach)
+
+focus on object and create your codes.
+
+main pillers of oops
+---------------------
+
+1.class
+2.object
+3.inheritance
+4.polymorphism
+5.abstyraction
+6.encaptulation
+-------------------------------------------------------
+
+ES5 - ecmascriot 5 which is not using oops approach means its more focusing on functional programming, functions based program.
+
+we can combine our functions as part of class and we can use it.
+
+---------------------------------------------------------------------
+class: its a design/ template/ blue print of a object from than we can create multiple objects as per the requirements.
+
+So, sometimes its also called as class is the collection of objects.
+
+to create a class use class key word and then give class name( you can give any Name but follow the naming convententions)
+
+inside the class we are declaring member variables and member functions.
+
+always we will use this keyword to access member variables and member functions in a class.
+
+--> to initialize the values of variable we are using constructor assign values.
+
+
+
+
+
+
+
+
+
+
