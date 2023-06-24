@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let map= new Map();
+        map.set(1,"alex")
+        map.set(2,"bob")
+        map.set(3,"catty")
+
+        console.log(map)
+        keys=map.keys();
+        console.log(keys)
+        values= map.values();
+        console.log(values);
+
+        let entries=map.entries();
+        for(let entry of entries){
+            console.log(entry[0],entry[1]);
+        }
+        map.delete(2);
+        console.log(map)
+    </script>
+</body>
+</html>

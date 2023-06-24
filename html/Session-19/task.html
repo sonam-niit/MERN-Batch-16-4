@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Any text" id="text">
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate(){
+            let input= document.getElementById('text').value;
+
+            let array= input.split("");
+            let map= new Map();
+            for(x of array){
+
+                if(map.has(x)){
+                    let count= map.get(x);
+                    count++;
+                    map.set(x,count);
+                }else{
+                    map.set(x,1);
+                }
+            }
+
+            console.log(map)
+        }
+    </script>
+</body>
+</html>

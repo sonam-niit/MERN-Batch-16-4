@@ -1,0 +1,9 @@
+Set
+------------------------------
+
+Set is simply a collection values but they are unique.
+It will not allow you to add any duplicates inside the same.
+
+let obj= new Set();
+
+obj.set(12);

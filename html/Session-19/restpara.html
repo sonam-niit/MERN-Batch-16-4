@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Rest Parameter
+        //... called spread operator
+        function mydata(...nums){
+            for(let x of nums){
+                console.log(x);
+            }
+        }
+
+        mydata(1,2,3);
+        mydata("sonam","soni");
+        mydata(1,23,4,5,6,7,8);
+
+        function sum(...nums){
+            let total=0;
+            for(let x of nums){
+                total+=x;
+            }
+            return total;
+        }
+
+        console.log("Passing 3 para",sum(1,2,3));
+        console.log("Passing 5 para",sum(1,2,3,4,5));
+        console.log("Passing 7 para",sum(1,2,3,4,5,6,7));
+    </script>
+</body>
+</html>

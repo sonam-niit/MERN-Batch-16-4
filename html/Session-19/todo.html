@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="todo" placeholder="enter Task">
+    <button onclick="add()">Add</button>
+    <h1>Task List</h1>
+    <ul id="list"></ul>
+    <script src="todo.js"></script>
+    <script>
+        let mytodo=new Todo();
+
+        function add(){
+            const task= document.getElementById("todo").value;
+            mytodo.addTask(task);
+            display();
+            document.getElementById("todo").value=""
+        }
+        function remove(data){
+            mytodo.removeTask(data);
+            display();
+        }
+        function display(){
+            document.getElementById("list").innerHTML=mytodo.display();
+
+        }
+    </script>
+</body>
+</html>

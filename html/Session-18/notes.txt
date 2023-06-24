@@ -33,6 +33,56 @@ always we will use this keyword to access member variables and member functions 
 
 --> to initialize the values of variable we are using constructor assign values.
 
+=============================================================================================
+
+Inheritance: class can access parent class functionalities
+
+to inherit the functionality use extends keyword
+
+class x extends y
+{
+}
+
+y is parent class
+x is child class
+
+to call parent class constructor from child class use
+
+super() // in  child class construtor only
+
+to call methods
+use super.(method name)
+
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj= new Set();
+        obj.add(45);
+        obj.add(78);
+        obj.add(89);
+        obj.add("test");
+        obj.add("sj")
+
+        console.log(obj)
+        obj.add(78);
+        console.log(obj)
+        console.log(obj.size)
+
+        obj.delete(78);
+        console.log(obj)
+        console.log("Has 89? "+obj.has(89))
+
+        obj.forEach((value)=>{
+            console.log(value)
+        })
+        obj.clear();
+        console.log(obj.size)
+
+    </script>
+</body>
+</html>
