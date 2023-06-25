@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function test(cb){
+
+            setTimeout(function(){
+
+                setTimeout(function(){
+
+                        setTimeout(function(){
+                            console.log("completed");
+                            cb();
+                        },1000)
+                },2000)
+            },4000)
+        }
+
+        function print(){
+            console.log("Test function");
+        }
+        test(print);
+        //multiple callbacks its called is callback hell
+        // callback is not a good practice to work with multiple callback because handling error
+        //is very difficult, returning values in not possible
+    </script>
+</body>
+</html>

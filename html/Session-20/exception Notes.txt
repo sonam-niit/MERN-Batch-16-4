@@ -1,0 +1,172 @@
+Exception Handling
+-------------------------
+
+writing program in Javascript can cause exception.
+
+1. Reference Error
+
+	var number=10;
+        console.log(count);
+
+2. too many recursions
+
+	function test(){
+            test()
+        }
+
+        test();
+
+3 Invlid array length
+
+const arr=[1,2,3,4,6];
+
+        console.log(arr[9]) //undefined
+
+        arr.length=90**90
+
+4. Missing Initializer
+
+ const na me="sonam Soni"
+
+5. String function can apply on string variables
+
+	const count=89;
+        console.log(count.toUpperCase())
+
+6. URL malformed
+	console.log(decodeURI("%https://www.google.com/"))
+
+How to Handle this Error?
+-------------------------------------
+try catch Block
+
+try{
+	//code which can create exception
+}
+catch(error){
+	//write code for handling exception
+}
+
+finally{
+}
+
+finally block always executed either error occured or not occured.
+
+means you can close some objects which you have opened in finally block if it is required.
+
+<script>
+        try {
+            
+            console.log("Connection Opened")
+
+            console.log(decodeURI("%https://www.google.com/"))
+
+        } catch (error) {
+            console.log("Error Occured ",error)
+        } finally{
+            console.log("Connection closed")
+        }
+        
+    </script>
+
+=================================================================================
+
+Throw key word to throw our own (custome exceptions)
+
+to throw use Error class and create object of the same to throw an error
+
+throw new Error("Error Message");
+
+Custome Exception
+-------------------------------
+class NotValidAge extends Error{
+            constructor(message){
+                super(message);
+            }
+        }
+
+throw new NotValidAge("Not valid Data");
+
+===================================================================================
+
+Async and Await
+--------------------------
+
+when we deal with the promises then we are using .then().catch().finally() functions
+
+if no error then then() will be executed
+
+erro then catch() will be executed
+
+finally() will be executed every time
+==========================================================
+const promise1=fetch('https://jsonplaceholder.typicode.com/users/1');
+        promise1
+        .then((resp)=>resp.json())
+        .then((data)=>console.log(data))
+        .catch((err)=>console.log(err))
+
+
+
+code in not readable, same thing we can manage using async await
+
+
+function you need to create which is async and the promises which you are using that you neew to trigger with await, means once its fetch data then only you can print it.
+
+async keyword says intill i am fetching data the other codes can complete task asynchronously.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

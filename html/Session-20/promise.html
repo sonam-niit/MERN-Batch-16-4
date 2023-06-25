@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise= new Promise((resolve,reject)=>{
+
+            if(90>67){
+                resolve("Task completed successfully")
+            }else{
+                reject("Error while completing a task")
+            }
+        })
+
+        promise
+        .then((resp)=>{console.log(resp)})
+        .catch((err)=>console.log(err))
+
+        const promise1=fetch('https://jsonplaceholder.typicode.com/users/1');
+        promise1
+        .then((resp)=>resp.json())
+        .then((data)=>console.log(data))
+        .catch((err)=>console.log(err))
+
+    </script>
+</body>
+</html>

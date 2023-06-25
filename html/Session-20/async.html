@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function one(){
+            console.log("one completed")
+        }
+        function two(){
+            setTimeout(function(){console.log("two completed")},
+            2000)
+        //2000 ml = 2  sec
+        //wait for 2 seconda after that call this function
+        //callback
+        }
+        function three(){
+            console.log("three completed")
+        }
+        function four(){
+            console.log("four completed")
+        }
+
+        one()
+        two()
+        three()
+        four()
+        //asynchronous means one task will not wait for another task.
+    </script>
+</body>
+</html>

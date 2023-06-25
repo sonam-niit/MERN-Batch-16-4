@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class NotValidAge extends Error{
+            constructor(message){
+                super(message);
+            }
+        }
+        function check(age){
+            if(age>=18){
+                console.log("Valid for Vote");
+            }
+            else{
+               // throw new Error("Not Valid for Vote")
+               throw new NotValidAge("Not valid Data");
+            }
+        }
+
+        try {
+            let data= prompt("Enter any number");
+            check(data);
+        } catch (error) {
+            console.log("There is some Error Occured ",error);
+            console.log("Redirect user to the other page")
+        }
+    </script>
+</body>
+</html>

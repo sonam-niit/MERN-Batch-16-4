@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = [];
+
+        //cb will accept function as parameter
+        //pass function as parmeter called callback
+        function fetchData(cb) {
+
+            setTimeout(function () {
+                data.push(10);
+                data.push(20);
+                data.push(30);
+                console.log("data fetched");
+                cb();//calling a callback function
+            }, 3000)
+        }
+
+        function display() {
+            if (data.length > 0) {
+                for (let x of data) {
+                    console.log(x);
+                }
+            }else{
+                console.log("No data to display")
+            }
+
+        }
+        fetchData(display);
+
+    </script>
+</body>
+
+</html>
