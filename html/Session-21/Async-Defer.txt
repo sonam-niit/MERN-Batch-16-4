@@ -1,0 +1,133 @@
+DOM
+----------
+Document Object Model
+
+--> programming interface using that we can add, update or we can remove the element from the document (webpage in browser)
+
+--> How it looks?
+View the DOM of html page in  form of Tree.
+
+each tag we consider as Node.
+
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<h1>
+			<p>
+		</div>
+
+		<div>
+			<img>
+		</div>
+	</body>
+</html>
+
+
+To read the element from this dom we can use diffrent methods
+
+document.getElementById()
+document.Selector();
+
+traverse we understood diffrent types of selectors.
+
+1. Downwards: children
+
+2. upwards: parentElement, closest()
+
+3. sidewards: nextSiblingElement, previousSiblingElements
+===============================================================================================
+
+
+Working with the external Scripts
+-------------------------------------------
+how to include external script in page.
+
+<script src="file name"></script>
+
+Always put your <script> before </body> tag why?
+
+Browser must wait for the script to down;load, once it is downloaded then only it process the page.
+
+==========================================================================================================
+
+We can include the script either in defer mode or async
+
+1. Defer: it will tell your browser not wait for script. Browser will continue to process the HTML page and able to build the DOM, the script later will load in the background once the DOM built successfully.
+
+--> it will never blocks your page.
+--> It will shows the content immidiatly  but it will complete the DOM load process whne the script loaded successfully.
+
+--> These defer script also maintain the order
+
+	--script1.js (bigger)
+	--script2.js (small)
+	--script3.js (small)
+
+--smaller script downloaded first but it will run when the all the scripts loaded.
+ follow the sequence.
+
+2. Async: this makes the script non-blocking..
+	 the script is completly independent
+
+	browser never blocks the async.
+
+	Dom built will not wait for async Script, it will build the DOM immediatly.
+
+	--> it loads in background and once its loaded its start doing its execution.
+	
+	--> no sequence maintained here
+
+		if small script loaded first then it will start its execution.
+
+=======================================================================================
+
+Also include the scripts Dynamically..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

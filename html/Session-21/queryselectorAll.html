@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>This is my Heading</h1>
+        <button onclick="callme()">Change Text</button>
+        <ul class="list">
+            <li>Demo1</li>
+            <li>Demo2</li>
+            <li>Demo3</li>
+            <li>Demo4</li>
+        </ul>
+        <h1 id="test">Another H1</h1>
+    </div>
+    <script>
+    
+        let array=["sonam","pooja","rohan","mitali"]
+       let ele= document.querySelectorAll("li");
+       console.log(ele)
+
+        for(let i=0;i<ele.length;i++){
+            ele[i].innerHTML=array[i];
+        }
+    </script>
+</body>
+
+</html>

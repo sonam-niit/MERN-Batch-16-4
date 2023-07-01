@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="comp1">
+            Some Data
+        </div>
+        <div class="comp2">
+            Some Data
+        </div>
+    </div>
+    <script>
+        //travese from downwards
+        let ele= document.querySelector(".container");
+        console.log(ele)
+        let nodes=ele.children;
+        //console.log(nodes)
+        // Array.from(nodes).forEach((el)=>{
+        //     console.log(el);
+        // })
+        const array= Array.from(nodes);
+        array.forEach((el)=>{
+            console.log(el)
+        })
+    </script>
+</body>
+</html>
