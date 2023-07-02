@@ -1,0 +1,244 @@
+Node Js
+--------------------
+Server Side platform / environment which is developed on Google Chromes V8 engine.
+
+Its not a framework.
+
+-- effective perfomance
+-- fast and scalable network
+
+why?
+
+Non-blocking I/O Model, event-driven
+
+------------------------------------------------
+install Node JS
+
+check node version: node -v
+
+check npm version: npm -v
+
+
+=========================================================================================
+
+REPL
+
+read execute print and loop
+
+means read input, process the and execute, print the output and repeat the same process continusly untill you close the same.
+
+How to open this?
+
+>node 
+
+(execute node command in cmd)
+
+>"hello wolrd"
+>34+67
+>78*4
+>const name="Sonam soni"; name;
+>function print(){return "welcome"}; print();
+
+to close do ctrl+c twice
+
+-------------------------------------------------------------------------------------
+
+How to execute a long lines of code using REPL?
+
+create a file with .js extention and run the same with node command.
+
+function hello(){
+    console.log("Hello Wolrd");
+}
+hello()
+const array=[1,2,3,4,5]
+
+array.forEach((value)=>{
+    console.log(value)
+})
+
+file name (first.js)
+------------------------------------------------------
+click terminal in VS code and open new terminal you can change the terminal type from powershell to cmd
+
+>node first
+
+(you can see the output in console)
+
+
+================================================================================================
+NPM: Node Package Manage
+
+its a registery which is having bunch of packages available which we can borrow for usage.
+
+If you want to share your package that also you can share.
+
+From npmjs.com will provide you the details of all the available packages.
+
+If you want use any package you need to install same in you system using npm install (npm i) command.
+
+Installation of package can be done in 2 modes
+
+1. globally
+------------------------
+npm i  package-name -g
+
+-- when you Install globally means its installed in your systems app data folder where the node installed.
+-- means you can use it from every where in your system.
+-- you can execute the command of that package directly.
+
+npm i typescript -g
+
+check the version: tsc --version
+
+-- come CSS precompilers
+
+npm i sass -g
+
+>sass --version (to check the version)
+>sass --help
+
+(Means these packages are available for access in any of my project directly)
+
+But its not suggested to install all packages globally because let's you have cretaed some application with diffrent version. Now you have upgraded the version. Version conflict happens here, its suggested to use few packages only for globall installation not all.
+
+check the global installed packages..
+
+npm list -g
+
+Pcakage.json file (configuration file of you project)
+----------------------------------------------------------------
+1. npm init (this will pop up some question like folder name, description, version, author)
+enter those things and generate.
+
+2. npm init -y (directy create package.json file with default values)
+
+2. locally:
+------------------------------------------------------------
+
+when you install package locally it will update your package.json file, you can see the list of dependencies with installed all packages in that folder.
+
+-- it will create package-lock.json file which indicates all registry locations from where the packages downloaded.
+
+-- it is also creating node_modules folder in your project with all downloaded packages.
+
+(what is benifits of this package files)
+
+let's say you have uploaded project in git hub or shared the same to some one.
+
+(node_modules) very big folder its not suggested to upload share to any one.
+
+just share your projects with package files and then will execute the command >npm install
+
+and it will again download this node_module folder to that location.
+===================================================================================
+
+Some packages we can also install only for development purpose but not for production.
+
+for ex. we want to test project
+
+testing only required for development so those dependecies we should install as Dev dependencies
+
+How??
+
+>npm i jasmine --save-dev
+
+=======================================================================================
+
+uninstall your installed packages using uninstall command
+
+>npm uninstall package-name (remove local dependency)
+ 
+>npm uninstall package-name --save-dev (remove depeloment dependency)
+
+>npm uninstall pcakage-name -g (remove global dependencies)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
