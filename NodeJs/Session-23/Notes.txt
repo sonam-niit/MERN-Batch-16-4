@@ -1,0 +1,57 @@
+Dummy API using node module-json-server for testing purpose
+npm install json-server -g
+check: json-server --version
+
+(If installed successfully open location whetre you want to create file)
+
+open VS code at location create file data.json
+
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "alex",
+      "email": "alex@gmail.com"
+    }
+  ]
+}
+
+Save It.
+
+Run this file using JSON-server: json-server data.json
+
+It will say API is running: localhost:3000/users
+-------------------------------------------------------------------
+Open POSTMAN tool and test methods
+
+1. Get: http://localhost:3000/users (give you all data)
+	http://localhost:3000/users/2 (pass Id through URL so if id available you will get that object)
+2. POST: http://localhost:3000/users (change method to POST and click on body below body click on raw and select form JSON from dropdown in the box enter object)
+	{
+		"id": 3,	
+		"name": "test",
+      		"email": "test@gmail.com"
+	}
+
+	It will update your JSON file
+
+3. PUT to update data:
+	http://localhost:3000/users/4 
+
+	write new object in the body and it will update the object
+
+	{
+		"name":"",
+		"email":"value"
+	}
+	
+4. Delete just trigger url wil id
+
+	http://localhost:3000/users/4 
+	it will delete id=4 object
+
+
+
+
+
+

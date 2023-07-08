@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="data"></table>
+    <input type="text" name="id" id="id" placeholder="Enter Id to search" onchange="search()">
+    <h2 id="search"></h2>
+    <input type="text" id="uid" placeholder="Enter ID">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="email" placeholder="Enter Email">
+    <input type="button" value="Save" onclick="save()">
+    <script>
+        function save(){
+            const id=document.getElementById('uid').value
+            const name=document.getElementById('name').value
+            const email=document.getElementById('email').value
+
+            fetch("http://localhost:3000/users",{
+                method:"POST",
+                body: JSON.stringify({
+                    "id":id,
+                    "name":name,
+                    "email":email
+                }),
+                headers:{
+                    "content-type":"application/json"
+                }
+            })
+            .then((resp)=>alert("Data Stored"))
+            .catch((err)=>console.log(err))
+        }
+        function search(){
+            const id= document.getElementById("id").value;
+            fetch("http://localhost:3000/users/"+id)
+            .then((resp)=>resp.json())
+            .then((resp)=>{
+                if(JSON.stringify(resp)=="{}")
+                {
+                    document.getElementById('search').innerHTML="USer Not Found"
+                }
+                else{
+                document.getElementById('search').innerHTML=resp.id +" "+resp.name+" "+resp.email
+                }
+            })
+            .catch((err)=>console.log(err))
+        }
+        function fetchData(){
+            fetch("http://localhost:3000/users")
+            .then((resp)=>resp.json())
+            .then((resp)=>{
+                let html='<tr><th>Id</th><th>Name</th><th>Email</th></tr>';
+                for(let i of resp){
+                    html+=`<tr><td>${i.id}</td><td>${i.name}</td><td>${i.email}</td>`
+                }
+                document.getElementById('data').innerHTML=html
+            })
+            .catch((err)=>console.log(err))
+        }
+        fetchData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "alex",
+      "email": "alex@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "bob",
+      "email": "bob@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Catherine Barretto",
+      "email": "catbr@gmail.com",
+      "country": "UK"
+    },
+    {
+      "id": "5",
+      "name": "Nandita",
+      "email": "nadita@gmail.com"
+    }
+  ]
+}
