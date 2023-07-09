@@ -1,0 +1,276 @@
+Enhance Object Literals
+--------------------------------
+When we create Object, How we can enhance the object creation.
+
+-- used to group variables from global scope.
+-- we can form them as simple JS object
+-- process of restructuring or putting back the things together.
+
+1. Propert Shorthand:
+
+when the property name and variable name are used to define a same property then we can use this shorthand.
+
+How?
+
+const name="John";
+const age=34;
+
+const user= {name,age};//property shorthand
+
+console.log(user.name);
+console.log(user.age);
+
+(Rather than writing like this
+	const user={name:name,age:age} Use Above Syntax)
+
+2. Computed Property Names:
+
+	we can use [] (square brackets to define Object properties dynimacally base on its variables and expression.
+
+How?
+	//Computed Property name
+const propertyName= 'color';
+const car={
+    [propertyName]:'blue'
+}
+
+console.log(car.color)
+
+3. Method Defination
+-------------------------------
+We can simply define a method inside a object.
+
+const calculator={
+
+	add(a,b){ return a+b;},
+	sub(a,b){ return a-b;}	
+}
+
+console.log("Addition", calculator.add(2,3));
+
+console.log("Subtract", calculator.sub(2,3));
+
+4. Warpping method and variables in Object
+
+const car={
+    //variables Declaration
+    carname:"Tata Punch",
+    color:"Black",
+    model:"Top",
+    //Function Declaration
+    start(){
+        console.log(`${this.carname} started`)
+    },
+    stop(){
+        console.log(`${this.carname} stopped`)
+    }
+}
+
+console.log(car.carname);
+console.log(car.color);
+console.log(car.model);
+car.start();
+car.stop();
+
+**************************************************************************************
+Nullish Coalescing Operator
+-----------------------------
+
+?? calles as nullish coalescing operator.
+
+It allow you to provide a default value when the variable is null or undefined.
+
+-- it returns the left side value if its not null or undefined, if its null or undefined then return the operators right hand side value.
+
+function check(value) {
+    const defaultValue = 'Default';
+
+    const result = value ?? defaultValue;
+    return result;
+}
+
+console.log("Check with some Value",check("Hello"));
+console.log("Check with NULL",check(null));
+console.log("Check with Undefined",check(undefined));
+console.log("Check with Empty String",check(""));
+console.log("Check with 0",check(0));
+console.log("Check with False",check(false));
+
+*** Logical OR*****
+-- to handle the values which are falsy (empty String, 0, false)
+
+function check(value) {
+    const defaultValue = 'Default';
+
+    const result = value || defaultValue;
+    return result;
+}
+
+console.log("Check with some Value",check("Hello"));
+console.log("Check with NULL",check(null));
+console.log("Check with Undefined",check(undefined));
+console.log("Check with Empty String",check(""));
+console.log("Check with 0",check(0));
+console.log("Check with False",check(false));
+
+
+___________________________________________________________
+Summary: to do error handling for null and undefine use ?? 
+	 to do error handling with " " , 0 or false then use || (logical OR)
+
+____________________________________________________________________________
+
+*** Optional Chaining Operator ****
+
+?. operator is called as optional Chaining operator
+
+It allows you to access the value of a property located to a perticular location, if not available from any of the refernce it will quickly return undefine.
+
+If one of the refrence in the chain is null/undefined then from that location only it will return undefined.
+
+-- prevent errors when we are trying to get some nested object values using chaining operator.
+
+const person={
+    name:"alex",
+    address:{
+        city:'New york',
+        street:'123 Main St.'
+    },
+    phonebook:{
+        personal:"123456789",
+        home:"1234567899"
+    }
+}
+
+console.log(person?.address?.city);
+console.log(person?.phonebook?.personal);
+
+const person1={
+    name:"John",
+    address:{
+        city:'New york',
+        street:'123 Main St.'
+    }
+}
+console.log(person1?.address?.city);
+console.log(person1?.phonebook?.personal); 
+//It will return undefined.
+//person1.phonebook.personal (will throw exception like can not read the properties of undfined)
+
+********Symbol *******************
+
+-- Its a premitive Data Type which is introduced in ES6.
+-- They are unique and immutable values which we can use as peropertyKeys in Object.
+
+Usage:
+-------
+we can use them to define and access object properties which are intended to be private or having some special meaning.
+
+How to Use?
+
+
+const symbol= Symbol();
+const obj={};
+
+obj[symbol]="This my Symbol Property"
+
+console.log(obj[symbol]);
+
+//Create the same in Another Way
+
+const symbol1= Symbol('Symbol with its description');
+const symbol2= Symbol('Symbol with its description');
+console.log(symbol1.toString());
+console.log(symbol1==symbol2)//unique Symbol
+
+***********************************************************************************************
+Collection Iterators
+-----------------------------------
+
+1. Generator:
+
+	-- special functions which can be paused and again resumed.
+	-- for creating same we will use simple function syntax only
+	-- for pause we will use 'Yeild' key word.
+
+
+function* numberGenerator(){
+    let num=1;
+    while(true){
+        yield num;
+        num++;
+    }
+}
+
+const myGenerator= numberGenerator();
+console.log(myGenerator.next().value);
+console.log(myGenerator.next().value);
+console.log(myGenerator.next().value);
+
+//when you call numberGenerator function it produces the result with infinite set of data.
+
+to work with that large amount of Data call next() method so everytime when next method call it resume its process and when it reaches to Yield again it paused and send the updated data.
+
+_____________________________________________________________________________________
+
+2. Iterators: objects implemented using Iterator protocol(interface)
+
+		provides standard way to iterate over arrays, strings,maps and sets...
+
+const arr=[1,2,3,4,5];
+
+const itertaor= arr[Symbol.iterator]();
+//This Symbol.iterator is inbuilt property available in all array, map,set objects
+
+console.log(itertaor.next().value);
+console.log(itertaor.next().value);
+console.log(itertaor.next().value);
+console.log(itertaor.next().value);
+console.log(itertaor.next().value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

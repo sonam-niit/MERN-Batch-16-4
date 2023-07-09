@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sonam",
+      "gpa": "4.5",
+      "address": "Mumbai, Maharastra"
+    }
+  ]
+}
