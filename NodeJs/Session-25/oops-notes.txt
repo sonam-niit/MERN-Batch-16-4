@@ -1,0 +1,60 @@
+Prototypes in JS:
+---------------------------
+
+-- we can allow objects to inherit properties and methods from other objects.
+-- way to reuse the code and we can improve out code efficiency.
+
+
+OOPs principles
+-----------------------------
+class & object
+(structure our code in class, its collection of member variables and functions)
+
+when we create an object its small part which can have the access of all the class functionalities.
+
+1. Encaptulation
+-----------------------
+buldle the relateddata and its object and controll the access to them. Achieve this?
+
+closures, modules and classes.
+
+2. Polymorphism
+--------------------------
+
+same value you can treat diffrently in your project. How?
+
+2 way: static polymorphism (Method Overloading), dynamic polymorphoism(method overriding)
+
+1. Method Overriding
+------------------------------------
+
+when child class is extending a parent class means child can access all the properties and function of parent class but child can also implement its own similar functionality and use it by overriding parent methods.
+
+
+2. Overloading
+----------------------
+check the type of argument and execute accordingly
+
+same function name and call it with diffrent parameters or diffrent types
+
+3. Abstraction
+-----------------------
+Bind methods and functions inside a  class which is called as abstarction, means indirectly we are hiding the code implementationand we cna just use then by calling its methods.
+
+Bind them using functional constructor and prototype.
+
+Access Specifier
+-------------------------
+We can limit the access of variables outside th class by using access specifiers like public & private.
+
+
+****Composition**********
+
+helping us for creating a complex objects by combining small objects and make it mor reusable.
+
+
+
+
+
+
+
