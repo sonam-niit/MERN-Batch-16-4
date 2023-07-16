@@ -1,0 +1,130 @@
+Pure Function in Javascript
+------------------------------
+
+-A function which always return same result when you pass the same argument.
+-maintain the stet of your data , its not changing it during program execution.
+
+function calculateIntrest(principle,rateOfIntrest, noOfYears){
+
+    return (principle*rateOfIntrest*noOfYears)/100;
+}
+
+const result =calculateIntrest(1000,4.5,3);
+console.log("Intrest: "+ result);
+
+This function is considered as Pure function because its not affecting from some external states or side effets.
+
+==================================================================
+immutability In Javascript
+-----------------------------------
+
+Immutable Objects
+-----------------
+
+when the object is immutable you cna not add any new property to your object. We not not modify.
+
+==============================================================================================
+
+Higher order Functions
+---------------------------------------------
+
+Function takes more than one functions as argument or function returns a function itself.
+At that time we execute main function and inside that whatever the inner function we have written will execute one by one.
+
+*****************************************************************************************
+
+Currying
+---------------------------------
+using this we can transform a function with multiple arguments into a sequence of functions, each will take single argument.
+
+******Security************
+
+1. Cross Site Scripting (XSS) prevention
+----------------------------------------------
+XSS attacks occured on your page where use can enter some script in the form and your form is accepting that untrusted data without any kind of validations.
+
+-- to prevent we always validate userInput to directly display on a webpage and better to avoid .innerHtml or eval()
+ because it used to dirrectly add data into DOM.
+
+2. CSRF (Cross-Site Request Forgery):
+
+These attack occures when user click on some trusted website and from that website someone can trick the user and perform unwanted action to some another website.
+
+Protect: Generate CSRF tokens or use cookies (same site) to protect from CSRF attacks.
+
+3. Secure Communicaton: always tramit your data over HTTPS protocol, avoid sending information using unencrypted HTTP connections.
+
+4. input Validation and Sanitization:
+validate and sanitize all user inputs to prevent from entering some wrong user input. Add backend validation as well.
+	add validations: at server side coding
+	add validation to direct DB as well
+5. Secure Authentication and Authorization:
+
+	username and password while registering Sonam@123 
+	
+	we can encrypt the password by using some Hashing technique.
+
+	bcrypt package using for encryption.
+
+	Authorization we can manage using Role Creation: Admin, Manager, User
+
+6. Secure Third Party libraryies: navigation,payment
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
