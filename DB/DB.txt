@@ -1,0 +1,283 @@
+Database is the Storage
+-----------------------------------
+
+1. Structured Database:
+	following a proper structured
+
+	Storing the data in the form Table
+	combination of rows and column
+
+	MYSQL
+	Oracle
+	MS SQL Server
+	H2
+	PostGreSQL
+
+2. UnStructured Database:
+	no structured just storing values in the form of Objects(JSON Objects)
+	MongoDB
+	CoutchDB
+	Cassandara
+	Mem-Cache
+
+===========================================================================================
+
+DBMS: Database Management System
+
+RDBMS: Relational Database Management System
+
+stores the data in the form of table and when you have multiple tables you can make a relationship between those tables.
+
+RelationsShips:
+
+1. One to One
+2. One to Many
+3. Many to Many
+4. Many to One
+
+-----------------------------------------------------------------------------------
+How to deside a table creation
+
+
+Entity:object you can consider as entity for your DB
+
+	product, customer, order, cart, category
+
+Attributes: the features (data) of that entity
+
+	product: id,name,price,description,qunatity
+	customer:id,name,address,phone,email
+	order: orderid, date, payment,productDetails, customerDetails
+	cart: id,customeDetails,productsDetails, total amount
+
+
+Entity we will create as table in the database and attributes are the fields of the table.
+--Data which we will insert called as row (records)
+
+How to Create DB
+------------------------
+create Database ecommerce;
+
+How to UseIt?
+------------------------------
+use ecommerce;
+
+How to create Table
+-------------------------------
+create table Customer(id int,name varchar(20),email varchar(50),phone varchar(10),address varchar(100))
+
+Insert into customer (id,name,email,phone,address) values(1,"sonam","sonam@gmail.com","123456789","ahfsdas");
+
+Retrival:
+
+select * from cutsomer (retrive all the data from Customer table)
+
+-------------Where clause
+
+SELECT * FROM `customer` where id=4;
+
+
+Operations in DBMS
+------------------------------------------------------
+DDL, DML, DQL , TCL
+
+1. DDL: Data Defination Language
+--------------------------------------
+CREATE
+ALTER
+DROP
+
+2. DML: Data Manupulation Language
+-------------------------------------
+INSERT
+UPDATE
+DELETE
+
+3. DQL: Data Query Language
+------------------------------------
+SELECT
+
+4. TCL: transaction Control Language
+----------------------------------------------
+
+commit()
+
+rollback()
+
+===================================================================================
+
+Constraints (Rules)
+---------------------------------------
+
+make something which is unique
+
+1. Primary Key
+-------------------------------
+unique
+can no be duplicated
+one table can have only one primary key
+
+create table student(id int primary key auto_increment,name varchar(20),email varchar(30));
+
+insert into student (name,email) values ("alex","alex@gmail.com")
+
+
+
+2. Foreign Key Constraint:
+
+
+When we are storing data in table then some time some data may be duplicated which is called redundant data.
+
+to remove that redundency we can create table and make a relationship between those tables. while making the relationship if you use one table PK to connect with another table so that pk in another table its called as FK.
+
+eg. CategoryId used in  Product table to find the category of each product.
+
+----------------------------------------------------------------------------------------------------
+
+How you will identify the nredundant data and how you will structure your Data?
+
+Normalization: it is technique used to remove data redundancy and remove the extra data insertion in Database.
+
+Indirectly we follow the rules like divide the bigger table into the smaller ones and make the relationships between Them.
+
+How to Normalize?
+
+we will check step by step
+
+1. check if the data is in 1NF (Normal form) yes
+2. Check if it is in 2NF yes
+3. 3NF
+4. BCNF
+5. 4NF
+6. 5NF &
+7. 6NF
+
+1. 1 NF: Each cell of the table contain only a single value
+	 Each row (record) Must be unique (Pk is available or not)
+
+2. 2 NF: First Check if its is in 1 NF if yes then continue with 2NF details
+
+	(when you remove partial dependency from the table the table will be in 2NF)
+
+3. 3 NF: table must be in 2NF
+
+	 transitive Dependency (functional Dependency)
+
+
+
+============================================================================================
+
+Whenever DB creation required just check no of entities, attributes and relationship between those table and the structure the Data accordingly.
+
+DeNormalization
+-----------------------------
+Combine Multiple tables into One table
+
+why?
+
+
+In some cases when you divide the table which is having less data but though they are divided into seperate table to search data we need to write JOIN queries. To execute them it takes time and reduces the permance so to make it performance effiecient some time we can allow duplication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
