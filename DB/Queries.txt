@@ -1,0 +1,141 @@
+Create table with PK
+-------------------------
+
+create TABLE classes(class_id int PRIMARY KEY AUTO_INCREMENT, class_name varchar(20));
+
+
+use that PK in another table as FK
+----------------------------------------
+create table student(
+	student_id int PRIMARY KEY AUTO_INCREMENT,
+    student_name varchar(20),
+    age int,
+    cid int,
+    FOREIGN KEY(cid) REFERENCES classes(class_id)
+)
+
+
+Let's Insert Some Records
+----------------------------------------
+insert into classes (class_name) values ("BCA FY")
+insert into classes (class_name) values ("BCA SY")
+insert into classes (class_name) values ("BCA TY")
+
+INSERT INTO student (student_name,age, cid) VALUES ('vaibhav', '20', '2');
+INSERT INTO student (student_name,age, cid) VALUES ('shruti', '22', '3');
+
+
+How to fetch the data from single table
+------------------------------------------------
+
+-- select * from student;
+-- select * from classes;
+
+(* means fetch all data)
+
+-- fetch student name and Age
+-- select student_name, age from student;
+
+Fetch on the basis of some values where clause
+--select * from student where student_id=1
+--select * from student where student_name="vaibhav";
+--select * from student where age>25;
+--select * from student where cid=3
+====================================================================
+
+Joins Query
+-------------------
+(Inner join will fetch the Common Data from both the tables)
+
+SELECT student.student_name,student.age,classes.class_name FROM student 
+join classes
+ON student.cid= classes.class_id;
+
+-----------------------------------------------------------------
+SELECT s.student_name,s.age,c.class_name 
+FROM student s
+join classes c
+ON s.cid= c.class_id;
+
+--------------------------------------------------------------------------
+
+Outer Joins works
+---------------------------------------------
+left outer join will give me all common details + extra from left hand side table
+
+SELECT s.student_name,s.age,c.class_name 
+FROM student s
+LEFT OUTER join classes c
+ON s.cid= c.class_id;
+
+
+Right Outer Join
+------------------------
+SELECT s.student_name,s.age,c.class_name 
+FROM student s
+RIGHT OUTER join classes c
+ON s.cid= c.class_id;
+
+===========================================================
+
+Get all common + left side table + right side table
+
+full Outer Join
+
+SELECT s.student_name,s.age,c.class_name  from student s
+left join classes c on s.cid=c.class_id
+UNION
+SELECT s.student_name,s.age,c.class_name  from student s
+RIGHT JOIN classes c on s.cid=c.class_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
