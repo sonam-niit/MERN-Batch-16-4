@@ -1,0 +1,185 @@
+MongoDb: Database
+-------------------------
+
+No structured DB (this DB is no structured in the form of table like SQL databases)
+
+we can store values in the form of either JSON/BSON data
+
+JSON (javascript object Notation)
+BSON (Binary javascript object Notation)
+
+-------------------------------------------------------------
+
+In SQL database we are storing data in tables. (we can store multiple rows)
+in mongodb we will store data in Collection (we can store multiple documents)
+
+1 DB
+	many collections
+
+		many documents
+
+How this document Looks Like
+-------------------------------------
+{
+	"_id":"43567890zbdscasd",
+	"name":"sonam",
+	"email":"sonam@gmail.com",
+	"phone":"7632423486"
+}
+
+Document having values in the form of key value pair (looks like JSON object)
+
+Open MongoDB Compass
+---------------------------------
+create DB
+>use classes;
+see no of databases available;
+>show databases;
+create collection in currunt DB
+>db.createCollection("student");
+to see the available collections
+>show collections;
+
+Insert some records in my Collections
+1. InsertOne will insert one value and insertMnay will insert Many Values.
+>db.student.insertOne({name:"alex","email":"email@gmail.com","country":"UK",result:45.89})
+
+>db.student.insertMany([
+{name:"bob","email":"bob@gmail.com","country":"US",result:78},
+{name:"catty","email":"catty@gmail.com","country":"India",result:56},
+{name:"john","email":"john@gmail.com","country":"UK",result:80},
+])
+
+Fetch Records
+---------------
+fetch All
+--------------
+>db.student.find();
+
+>db.student.find({country:"UK"})
+
+fetch a perticular Record
+-------------------------------
+>db.student.findOne({email:"bob@gmail.com"});
+fetch only name
+>db.student.find({},{name:1})
+
+(name and _id it will give)
+fetch only name,marks from collection
+>db.student.find({},{name:1,result:1})
+
+fetch only name,marks from collection without _id
+>db.student.find({},{name:1,result:1,_id:0})
+
+Update Some Data
+------------------------------------------------
+updateOne & updateMany
+
+>db.student.updateOne({email:"bob@gmail.com"},{$set:{name:"bobby"}})
+
+(update student set name="bobby" where email="bob@gmail.com")
+
+>db.student.updateMany({},{$inc:{result:5}})
+
+//update all students by incrementing their marks by 5
+
+====================================================================
+Operators in MongoDB (all operators in mongodb starts woth $ symbol)
+
+$gt (greater than operator)
+
+>db.student.find({result:{$gt:70}})
+
+$lt (less than)
+>db.student.find({result:{$lt:60}})
+
+$eq (equal)
+>db.student.find({result:{$eq:85}})
+$ne (not equal)
+>db.student.find({result:{$ne:85}})
+
+you can also use $gte(greater than equal) & $lte(less than equal)
+
+----------------------------------------------------------------------------
+$in and $nin
+(compare more than 1 value and based on that return results)
+
+>db.student.find({country:{$in:["US","India"]}})
+
+>db.student.find({country:{$nin:["US","India"]}})
+
+-----------------------------------------------------------------------------
+
+logical Operator $and(all the coditions to be true) $or(to check any one condition to be true)
+
+>db.student.find({$or:[{country:"US"},{country:"India"}]})
+
+>db.student.find({$and:[{result:{$gte:50}},{result:{$lte:70}}]})
+
+$nor(will get all the records except the given condition)
+
+>db.student.find({$nor:[{country:"US"},{country:"India"}]})
+
+$not (get all students whose marks not greater than 60)
+
+>db.student.find({result:{$not:{$gte:60}}})
+
+=====================================================================================
+
+>db.student.insertMany([
+{name:"eka",email:"eka@gmail.com",country:"US",result:45},
+{name:"devid",email:"devid@gmail.com",country:"India",result:76},
+{name:"aesha",email:"aesha@gmail.com",country:"UK",result:67},
+])
+
+>db.student.updateOne({email:"eka@gmail.com"},{$set:{salary:340000}})
+>db.student.updateOne({email:"aesha@gmail.com"},{$set:{salary:30000}})
+
+//fetch only those records where the salary field exists
+>db.student.find({"salary":{$exists:true}})
+
+>db.student.find({"salary":{$exists:true,$gte:50000}})
+
+************* Aggregate Functions*********************
+
+$sum, $min, $max, $avg, $first,$last;
+
+//Group students on the basic of country and provide the count.
+
+>db.student.aggregate([{$group:{_id:"$country",NoOfStudents:{$sum:1}}}])
+
+>db.student.aggregate([{$group:{_id:"$country",avg_result:{$avg:"$result"}}}])
+
+//Functions for sorting data
+
+>db.student.find({},{name:1,result:1,_id:0}).sort({name:1}) (sort in ascending Order)
+>db.student.find({},{name:1,result:1,_id:0}).sort({name:11}) (sort in descending Order)
+
+>db.student.find({},{name:1,result:1,_id:0}).sort({result:-1})
+
+
+//Topper student
+>db.student.find({},{name:1,result:1,_id:0}).sort({result:-1}).limit(1)
+
+//skip some records and then give limits
+db.student.find({},{name:1,result:1,_id:0}).sort({result:-1}).skip(3).limit(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
