@@ -165,7 +165,11 @@ $sum, $min, $max, $avg, $first,$last;
 db.student.find({},{name:1,result:1,_id:0}).sort({result:-1}).skip(3).limit(2)
 
 
+//Delete
 
+db.student.deleteOne({email:"bob@gmail.com"})
+
+db.student.deleteMany({country:"US"})
 
 
 
