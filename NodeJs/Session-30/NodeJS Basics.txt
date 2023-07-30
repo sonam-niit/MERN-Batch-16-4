@@ -1,0 +1,47 @@
+We have diffrent types of packages available
+---------------------------------------------
+1. In built :
+ which we will get when we install node to our system.
+
+2. Local:
+Which we are creating by our own.
+
+3. Third Party Packages:
+which we can install using npm command and use them.
+
+InBuilt 
+--------------------
+path, url, os, fs, http
+
+FS: file System Module
+------------------------------------
+//open file (if file available then it will open other wise it will give me error)
+fs.open(__dirname+'/files/demo.txt',(err)=>{
+
+    if(err){
+        console.log("Unable to open file",err)
+    }else{
+        console.log("File Opened Successfully")
+    }
+})
+
+
+
+Write Data to file using Write Function() it will remove the old data add new data.
+
+Append data to file will append the data at the end of the file means kepp old data as it is and add new data after that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
