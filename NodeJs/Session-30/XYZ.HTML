@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .add {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> javascript calculator</h1>
+        <form id="form1">
+            <input type="text" id="input1">
+            <select id="eu">
+
+                <option value="pl">+</option>
+                <option value="mins">-</option>
+                <option value="mul"> *</option>
+                <option value="divi">/</option>
+            </select>
+            <input type="text" id="input2" />
+            <button type="button" id="but" onclick="_clear()">result</button><br><br>
+            <textarea id="texta"></textarea>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+
+            $('#but').click(function () {
+
+                var v1 = parseInt($('#input1').val());
+                var v2 = parseInt($('#input2').val());
+                console.log(v1,v2)
+                var result;
+
+                if ($('#eu').val() == "pl") {
+                    result = v1 + v2;
+                }
+
+                else if ($('#eu').val() == 'mins') {
+                    result = v1 - v2;
+                }
+                else if ($('#eu').val() == "mul") {
+                    result = v1 * v2;
+                }
+
+                else if ($('#eu').val() == 'divi') {
+                    result = v1 / v2;
+                }
+                console.log(result)
+                $('#texta').html(result);
+
+            })
+        })
+        function _clear() {
+            console.log("clear");
+            document.getElementById("input1").value = '';
+            document.getElementById("input2").value = '';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+Create one folder and then create package.json file
+>npm init -y
+
+Install express> npm i express
+
+create express server
+
+once it is started you cal trigger links by using 
+localhost:5000/
+localhost:5000/about
+
+To run server file:
+ node index.js
+
+once started then only check in the broswer.
+
+=============================================================
+
+I have some page like homepage.html and i wnat to provide as response then how?
+
+resp.sendFile(fileName); //file path must be absolute otherwise it will give an error.
+
+
+//sending HTML file as resp
+app.get("/homepage",(req,res)=>{
+    res.sendFile(__dirname+'/files/index.html');
+})
+
+Also create one file inside the files folder with index.html and add some code and then restart your server
+check localhost:5000/homepage.
+
+-------------------------------------------------------------
+Access static data on my server.
+
+create one folder where you have all html files, images css etc..
+
+>app.use(express.static('./files/website'));
+
+by default when user is trying to access loclahost:5000/ it will open the static file
+
+>app.use("/sample",express.static('./files/website'));
+
+localhost:5000/sample to open the page.
+=================================================================================
+
+
+Whenever we make changes to the code we need to restart the server manually, so automate this process use nodemon package. 
+>npm i nodemon
+
+open package.json file and one script
+
+ "scripts": {
+    "start": "nodemon routing.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+to run your application: Execute command: npm start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
