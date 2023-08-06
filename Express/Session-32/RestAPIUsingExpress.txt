@@ -1,0 +1,106 @@
+create package.json file
+>npm init -y
+
+install packages
+>npm i express nodemon
+
+create main file: server.js
+
+as per your main file update package.json file to run main file using nodemon
+ "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+===========================================================================
+
+edit server.js as in git repos and check apis in postMan
+
+localhost:5000/users postmethod --> body -->row --> select JSON from Dropdown
+
+{
+	"id":1,
+	"name":"sonam"
+}
+
+click on send.
+
+localhost:5000/users get method : you can see all data available in users array
+
+localhost:5000/users/1 get method : if id 1 is available it will show data otherwise show err message.
+
+localhost:5000/users/1 delete method: if 1 id is available then it will delete it.
+
+------------------------------------------------------------------------------------------
+
+Template Engines
+
+we are creating APIs and reading the data frontend but what if i want to render the data directly from my express code with some dynamic files?
+
+We can use template Engine to directly render the data.
+
+we are having bundle of template engine available like pug, ejs, express-handlerbar etc..
+
+using that we can directly provide the response.
+
+
+
+I want to use pug: npm install pug.
+
+
+create one application where you can set express server and then to set up view engine files create folder names views and create some files with .pug extention.
+
+index.pug
+user.pug
+
+create template.js file
+
+so when you run: node template
+
+you can check the pug files renders whne you trigger some links
+localhost:5000/
+loclahost:5000/user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

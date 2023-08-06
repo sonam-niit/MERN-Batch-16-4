@@ -12,7 +12,7 @@
     <script>
         async function fetchData() {
             try {
-                const resp = await fetch("https://jsonplaceholder.typicode.com/users");
+                const resp = await fetch("http://localhost:5000/users");
                 const users = await resp.json();
                 console.log(users)
                 display(users);
@@ -31,8 +31,8 @@
                     <tr>
                         <td>${i.id}</td>
                         <td>${i.name}</td>
-                        <td>${i.username}</td>
-                        <td>${i.email}</td>
+                        <td>${i.name}</td>
+                        <td>${i.country}</td>
                     </tr>
                 `
             }
