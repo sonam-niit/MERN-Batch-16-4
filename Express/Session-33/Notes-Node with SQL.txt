@@ -1,0 +1,34 @@
+To use node with any SQL DB we can use Sequelize package which is an ORM tool.
+
+create package.json file: npm init -y
+
+>npm i express sequelize mysql2
+
+(install this 3 packages to set up REST API with DB)
+
+create server.js
+--------------------------
+basic express server code.
+
+to setup sequlize and model: create one folder called model inside that create file user_model.js
+
+set up the model and make sure you export to use it in another file.
+
+--> create routes in 
+
+	folder: routes
+	file: user_routes.js
+
+	set up the all crud operations.
+
+use this route file in express server
+
+by adding app.use command.
+
+Check APIS using postman
+
+localhost:5000/api/user (change methods)
+
+
+
+
