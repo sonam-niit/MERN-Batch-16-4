@@ -19,4 +19,5 @@ async function addUser(name,username,email,password){
     }
 
 }
+//write functions for login,getByUsername
 module.exports= addUser;
