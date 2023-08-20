@@ -1,0 +1,44 @@
+To remember the user we can use Cookies which stores values in browser storage
+-------------------------------------------------
+to work with cookies use package cookie-parser.
+
+include in index.js
+
+app.use(cookieparser());
+
+Here we are trying to make our all routes protected, so if user logged in then only user can access other routes, other wise we will ask the user to login first.
+
+Created model: user_model.js
+
+Created routes: register, login & profile
+
+In Login: if user logged In successfully Then add cookie in response
+		res.cookie("key","value"); //you can see the cookie in browser or in postman as well
+
+To read the cookies if user try to access profile page then
+		req.cookies.key (cookie key you can give here)
+		(to read the cookie cookie-parser required, if you forgot to add that it may cause error)
+
+create main server: index.js
+
+localhost:5000/api/auth/register
+
+localhost:5000/api/auth/login
+
+	(after login you can see the cookie generated in your postman)
+
+localhost:5000/api/auth/profile
+
+	(it will allow you to access profile )
+
+localhost:5000/api/auth/logout
+
+	(it will remove the added cookie)
+
+
+
+
+
+
+
+

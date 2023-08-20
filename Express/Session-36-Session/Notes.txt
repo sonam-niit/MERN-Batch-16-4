@@ -1,0 +1,21 @@
+To remember the user we can use Session
+-------------------------------------------------
+to work with session use package express-session.
+
+Here we are trying to make our all routes protected, so if user logged in then only user can access other routes, other wise we will ask the user to login first.
+
+Created model: user_model.js
+
+Created routes: register, login & profile
+
+create main server: index.js
+
+localhost:5000/api/auth/register
+
+localhost:5000/api/auth/login
+
+	(after login you can see the session Id generated in your postman)
+
+localhost:5000/api/auth/profile
+
+	(it will allow you to access profile page)
