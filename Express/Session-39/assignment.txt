@@ -1,0 +1,14 @@
+Update the code of session:38
+
+add one filed in model: profilImg
+
+when user register no need to add profile image its optional
+
+when maually user wants to upload the profile picture user can trigger api and upload the image.
+
+update the userDetails in DB with image URL
+
+
+
+
+
