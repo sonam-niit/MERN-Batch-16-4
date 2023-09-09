@@ -1,0 +1,83 @@
+React
+--------------------
+SPA: Single Page application we can create using React
+
+Its a library
+---------------
+Development server which hepling us to create UI 
+
+created by facebook
+
+
+How to create React application?
+
+--> npx create-react-app firstapp
+
+who are not able to install npx command then
+
+install react first and then create app
+
+--> npm install create-react-app -g
+--> create-react-app firstapp
+
+once the application get created move to its folder: cd firstapp
+open the same in vs code : code .
+run the application: npm start
+
+==========================================================================
+JSX: javascript extention: we can simply add HTML code to javascript function without any quotes or anything
+
+
+
+
+State in React
+-------------------
+whenever the state get changed the value renders again.
+Here the application is Single Page Application, virtual DOM to original dom
+
+it will check is there changes then it will render only those changes rather that reloading the full Page.
+
+how to work with the state?
+
+use -- useState Hook
+
+syntax: const [name,setName]= useState("Prathibha");
+
+declare variable as array with 2values 
+1. variable name
+2. function name to change the value to that variable
+
+useState hook you need to import from React...
+it accpets a default value 
+
+if I declare a number so I can set the default value as 0 too.
+const [count,setCount]= useState(0);
+
+for object i can set default value {}
+
+const [user,setUser]= useState({});
+
+for Array I can set the default value []
+
+const [products,setProducts]= useState([]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
