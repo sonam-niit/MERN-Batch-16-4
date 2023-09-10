@@ -1,20 +1,15 @@
-import logo from '../src/logo.svg';
-import { Counter } from './components/counter';
-import { Header } from './components/header';
-import {NavbarComp} from './components/navbar';
-import { Slider } from './components/slider';
-import { UserDetails } from './components/userDetails';
+import { Greetings } from "./components/session2/greeting";
+import { ProductList } from "./components/session2/productlist";
 
 function App() {
 
-  const name="Sonam Soni";
   return (
     <div>
-      <Header />
-      <Counter />
-      <UserDetails />
-      <NavbarComp />
-      <Slider />
+      {/* Passing Props from App component to 
+      Greetings Component */}
+      <Greetings name="Sonam Soni" 
+      message="Hello EveryOne"/>
+      <ProductList />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+Create a Simple React application called TodoList. 
+
+in app component created and array of todo using useState.
+
+const [todos,setTodos]=useState([]);
+
+Also create on task field to take it from user.
+
+const [tast,setTask]=useState('');
+
+Now, create one input field in return and when you type something by using onChange set the value of task state.
+
+by clicking on submit Button, update the todos array
+
+and also display that updated array to the same component.

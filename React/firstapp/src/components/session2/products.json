@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"Pencil",
+        "price":10,
+        "description":"extra dark",
+        "rating":4.5
+    },
+    {
+        "id":2,
+        "name":"Pen",
+        "price":15,
+        "description":"easy to use",
+        "rating":4.7
+    },
+    {
+        "id":3,
+        "name":"Scale",
+        "price":25,
+        "description":"easy to draw",
+        "rating":4.3
+    }
+]
