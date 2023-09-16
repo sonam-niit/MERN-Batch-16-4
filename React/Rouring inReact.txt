@@ -1,0 +1,86 @@
+When you want to make links and based on the links we want to render the components
+
+like by default it will load HOME Component
+when we click on Register it will Open Register Component
+
+click login: it will login component.
+
+We have to use react-router-dom
+
+>npm i react-router-dom
+
+its providing many components from it which we will use for creating Router.
+
+<BrowserRouter> Main component based on that the routing and its rendering work.
+
+<Routes> Parent tag to add all routes
+
+<Route> where we can add multiple routes.
+
+<Link> for creating Links (replacement of <a> tag)
+
+add BrowserRouter in app.js for rendering.
+
+---------------------------------------------------------------------------------
+create component contact.js
+
+import React from 'react';
+
+function ContactUs() {
+    return ( <div>
+        <h1>Contact Us</h1>
+        <h3>Email: support@shoppify.com</h3>
+        <h3>Phone: +91 9876543210</h3>
+    </div> );
+}
+
+export default ContactUs;
+
+
+create component about.js
+
+import React from 'react';
+
+function About() {
+    return ( <div>
+        <h1>About Us</h1>
+        <p>Paragraphs</p>
+        <p>Paragraphs</p>
+    </div> );
+}
+
+export default About;
+
+
+======================================================================================
+Create Routes in app.js
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/about";
+import ContactUs from "./components/contact";
+import CustomerManagement from "./components/custManage";
+
+function App() {
+
+  return (
+    <BrowserRouter>
+      <div className='container'>
+        <h1>Online Shopping Portal</h1>
+
+
+        <Routes>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="/custmanage" element={<CustomerManagement />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>)
+}
+
+export default App;
+
+
+Check paths:
+
+localhost:3000/about
+loclahost:3000/contact

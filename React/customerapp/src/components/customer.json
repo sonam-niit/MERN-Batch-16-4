@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Sonam",
+        "email":"sonam@gmail.com",
+        "country":"India"
+    },
+    {
+        "id":2,
+        "name":"Alex",
+        "email":"alexam@gmail.com",
+        "country":"US"
+    },
+    {
+        "id":3,
+        "name":"Devid",
+        "email":"devid@gmail.com",
+        "country":"UK"
+    }
+]
