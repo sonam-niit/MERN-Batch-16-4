@@ -1,0 +1,20 @@
+useEffect Hook
+-------------------------------------
+used to handle side effects in the functional components.
+
+Types of Side effects: data fetching, DOM manupulation,
+checking the state updates.
+
+Its very important while handling the life cycle of our component.
+
+Accepts 2 parameters: 1: callback, 2: dependency
+
+useEffect(callback,dependency)
+
+---> if no dependency
+
+	useEffect(callback)
+	callback runs continously in the background
+
+--> if you give [] as dependency then the side effect runs only once when the component loaded.
+
