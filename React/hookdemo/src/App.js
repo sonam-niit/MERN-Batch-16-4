@@ -1,13 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import UseEffectDemo1 from './components/useeffect1';
-import Timer from './components/timer';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import useDocumentTitle from './components/useDocumentTitle';
-import DynamicDocumentTitle from './components/useDocumentTitle';
-import UseCaseInputValidation from './components/UseCaseInputValidation';
-import UseCaseLiveFilter from './components/UseCaseLiveFilter';
-import RealTimeClock from './components/realtimeclock';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import UseCase2 from './components/usecase2';
+import DynamicDocumentTitle from './components/usecase2/useDocumentTitle';
+import UseCase3 from './components/usecase3';
 
 function Home() {
   // useDocumentTitle('Home Page')
@@ -33,12 +28,8 @@ function Contact() {
 function App() {
   return (
     <BrowserRouter>
-      <RealTimeClock />
-      <UseCaseInputValidation />
-      <UseCaseLiveFilter />
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
+      {/* <UseCase2 /> */}
+      <UseCase3 />
       <Routes>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>

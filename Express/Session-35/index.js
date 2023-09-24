@@ -1,8 +1,10 @@
 const express= require('express');
 const dotenv= require('dotenv');
 const connectDB = require('./dbconfig');
+const cors= require('cors');
 
 const app= express();
+app.use(cors()) //accesible from any origin
 dotenv.config();
 connectDB();
 //JSON Parser
