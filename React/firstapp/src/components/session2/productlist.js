@@ -22,7 +22,8 @@ export function ProductList(){
             <tbody>
                 {
                     products.map((item,index)=>{
-                        return(<tr key={index} onClick={()=>{selectProduct(item)}}>
+                        return(<tr key={index} 
+                        onClick={()=>{selectProduct(item)}}>
                             <td>{item.id}</td>
                             <td>{item.name}</td>
                             <td>{item.price}</td>

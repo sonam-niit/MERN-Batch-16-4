@@ -1,15 +1,12 @@
-import { Greetings } from "./components/session2/greeting";
-import { ProductList } from "./components/session2/productlist";
+import Session1 from "./components/session1";
+import Session2 from "./components/session2";
 
 function App() {
 
   return (
     <div>
-      {/* Passing Props from App component to 
-      Greetings Component */}
-      <Greetings name="Sonam Soni" 
-      message="Hello EveryOne"/>
-      <ProductList />
+      <Session1 />
+      <Session2 />
     </div>
   );
 }

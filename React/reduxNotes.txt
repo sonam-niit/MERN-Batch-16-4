@@ -1,0 +1,43 @@
+Redux is the Librray which is used for the state Management.
+
+Why Statemanagement?
+
+Ecommerce Project
+-----------------------
+UserData to manage
+CartData to manage
+orders manage
+
+userData and Cart data you wnat to showcase in your more than 1 component. we can use props
+
+but for using throughout the application use the state management library called redux.
+
+Redux Basically Works on 3 Things
+---------------------------------------------------
+Store, Reducer and Actions
+
+Store: Its a strorage which stores all the states which we can use anywhere in our application.
+
+	state: is readonly, whenver you wnat to make changes to your state, we need to dispach the action which helps to call the reducer to make the changes
+
+Reducers: its function which accepts 2 parameters (action, current state of the application) it returns the updated instance of the state.
+
+It will not chnage the any part of the state, its just making a new instance of the state with all required chnages.
+
+Create Application and install Redux
+
+>npm i redux react-redux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
