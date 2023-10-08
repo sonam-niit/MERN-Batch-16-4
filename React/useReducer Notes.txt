@@ -1,0 +1,69 @@
+UseReducer hook used to manage the more complex state which we are including into our components.
+
+It is an alternative of useState hook,
+
+when you want apply state logic which involves multiple sub states or when then next state depends in previous state then we should use useReducer hook.
+
+How It works?
+-----------------------
+use useReducer Hook
+
+which accepts 2 arguments 
+1. current state
+	:prev state of your perticular state which is declared
+2. action: which executes and based on that create an updated state of the current state.
+
+=========================================================================================
+const reeducer= (state,action)=>{
+
+	switch(action.type){
+
+		case 'INCREMENT':
+			return {count:state.count+1}
+
+		case 'DECREMENT':
+			return {count:state.count-1}
+
+		default:
+			return state;
+		
+	}
+}
+
+useReducer Hook for working with reducer function and state
+
+const [state,dispatch]= useReducer(reducer,{count:0})
+
+state: represting the current state
+dispatch: its a function which sends actions to your reducer
+
+how to use dispatch?
+
+dispatch({type:'INCREMENT'})
+
+Simply, the complex code of Redux can make easy to manage the state of your application using useReducer Hook
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

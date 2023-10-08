@@ -4,12 +4,15 @@ const AuthContext= createContext();
 
 export const AuthProvide=({children})=>{
     const [user,setUser]=useState(null);
-    const login=(userData)=>{
+    const login=async (userData)=>{
         console.log(userData);
+
         setUser(userData)
-        //API call of Backend for cheking the user
-        // if(userData.username=='' && userData.password=='123456'){
-        //     setUser(userData);
+        
+        //API call of Backend for cheking the user (API is available in Session 38 Login API)
+        // resp=await axios.post("http://localhost:5000/api/auth/login",userData)
+        // if(resp.status===200){
+        //     setUser(resp.data.userDetails);
         // }
     }
     const logout=()=>{
