@@ -1,0 +1,140 @@
+Testing?
+------------------
+
+Check our application is giving the output as expected.
+actual output === expected output
+
+Arrange: assume your application is in some certain state.
+create input, buttons etc..
+
+Act: do some action
+
+Assert: check (assert) the expected and actual output.
+
+Why Test?
+---------------
+To verify the application is ready for the production environment of not.
+
+Let's understand the syntax for the test case
+---------------------------------------------------
+describe('test a sum app',()=>{
+	function sum(a,b){
+		return a+b;
+	}
+	
+	it('the result should equal to 4',()=>{
+		expect(sum(2,2)).toBe(4);
+	})
+
+	it('the result not should equal to 4',()=>{
+		expect(sum(2,1)).not.toBe(4);
+	})
+	
+})
+
+
+describe is one test suit where you can write multiple testcases
+it- specification (test case) inside that we can write multiple expectations
+expect- assertion which is used to check the actual and expected output.
+
+For executing test we have multiple options available in React.
+
+1. JEST: React Testing Library , already coming react application means no need to install manually 
+2. CYPRESS: write e2e (end to end test cases)
+
+Simple React Test case in your React Application
+------------------------------------------------
+step: create react application
+check app.test.js file
+
+run command: npm test
+
+you can see the test case passed.
+
+open app.js and remove the full header code and again check the test case execution
+
+---> app.js add 1 heading with <h1>learn react</h1> again check the test case output
+
+Let's do the component Testing..
+create component Button.js
+---------------------------------
+import React from 'react';
+
+function Button({label,onClick}) {
+    return (
+        <button onClick={onClick}>{label}</button>
+      );
+}
+
+export default Button;
+
+Create the test case for above component in button.test.js file
+---------------------------------------------------------------------
+
+import { render } from '@testing-library/react';
+import React from 'react';
+import Button from './Button';
+
+test('renders a button with label',()=>{
+    const {getByText}=render(<Button label="Click Me"/>);
+    const buttonElement=getByText(/Click Me/i);
+
+    expect(buttonElement).toBeInTheDocument();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
